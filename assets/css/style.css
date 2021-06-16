@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Open+Sans&family=Roboto:wght@300;400;500&display=swap');
 * {
     box-sizing: border-box;
+    text-align: center;
 }
 body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    font-family: 'Roboto', sans-serif;
     margin:0;
-    
 }
-
+/*-------------------------------nav bar taken from w3schools bootstrap and adapted-----------*/
 .navbar{
     width: 100vw;
 }
@@ -74,7 +73,8 @@ img {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-family: "Dancing Script", cursive;
+  font-size: 18px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -130,18 +130,28 @@ img {
   .prev, .next,.text {font-size: 11px}
 }
 /*-----------end of slideshow ---------*/
-/*----------heading--------------------*/
-.welcome{
-    background-color: cornsilk;
-    text-align: center;
-}
+/*----------welcome heading--------------------*/
 .welcome-heading{
     color: green;
+    font-family: "Dancing Script", cursive;
 }
 .welcome-sub-heading1{
     color: #fff;
+    font-family: "Dancing Script", cursive;
     text-shadow: 2px 2px #000;
 }
 .welcome-sub-heading2{
     color: red;
+    font-family: "Dancing Script", cursive;
+}
+.introduction{
+    
+}
+.introduction-paragraph{
+    
+}
+/*----------section heading--------------------*/
+.section-header{
+    text-align: center;
+    font-family: "Dancing Script", cursive;
 }
