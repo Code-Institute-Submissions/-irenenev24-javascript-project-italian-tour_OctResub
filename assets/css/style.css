@@ -3,8 +3,7 @@
     box-sizing: border-box;
 }
 body {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     min-height: 100%;
     margin:0;
 }
@@ -12,51 +11,30 @@ body {
 .navbar{
     width: 100vw;
 }
-.bg-custom{
-background-image: linear-gradient(90deg, rgba(10, 197, 35, 0.726) 15%, rgba(255, 255, 255, 0.3) 50%, rgba(247, 12, 12, 0.6) 85%);
-}
 .nav-logo{
     color: #000000;
     font-style: italic;
 }
-.navbar {
-    min-height: 8vh;
+
+.bg-custom{
+background-image: linear-gradient(90deg, rgba(10, 197, 35, 0.726) 15%, rgba(255, 255, 255, 0.3) 50%, rgba(247, 12, 12, 0.6) 85%);
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-.navbar-brand span {
-    font-size: 1rem;
-    margin-left: 10px;
-}
-/*-------------------------------columns for images and text---------*/
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 300px) {
-  .column {
-    width: 100%;
-  }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*----------welcome heading--------------------*/
 .welcome-heading{
-    color: green;
+    color: blue;
     font-family: "Dancing Script", cursive;
 }
 .welcome-sub-heading1{
@@ -69,10 +47,11 @@ background-image: linear-gradient(90deg, rgba(10, 197, 35, 0.726) 15%, rgba(255,
     font-family: "Dancing Script", cursive;
 }
 /*-----------------image----------------------------*/
-img{
+.image{
     border-radius: 15px;
-    height: 400px;
+    height: 200px;
 }
+
 
 /*----------section heading--------------------*/
 .section-header{
@@ -203,3 +182,4 @@ hr {
     margin-top: 10px;
     color: #f05f40;
 }
+
