@@ -19,17 +19,36 @@ body {
 .bg-custom{
 background-image: linear-gradient(90deg, rgba(10, 197, 35, 0.726) 15%, rgba(255, 255, 255, 0.3) 50%, rgba(247, 12, 12, 0.6) 85%);
 }
-.container {
+.hero-image{
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  text-align: center;
-  color: white;
 }
 
-.centered {
+/* Place text in the middle of the image */
+.hero-text {
+  background-color: #888;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.green-welcome {
+    color: green;
+}
+.white-welcome {
+    color: #fff;
+}
+.red-welcome {
+    color: red;
 }
 
 /*----------welcome heading--------------------*/
