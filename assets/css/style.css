@@ -62,9 +62,10 @@ body {
     text-align: left;
   }
 }
-/*-----------------------hero image--------------------*/
+/*-----------------------hero image w3schools amended--------------------*/
 .hero-img{
     width: 100%;
+    border-radius: 15px;
 }
 .container{
     position: relative;
@@ -74,24 +75,22 @@ body {
   bottom: 20px;
   right: 20px;
   background-color: #000000;
+  border-radius: 15px;
   text-shadow: 2px 1px #f2f2f2;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 10px;
 }
 /*----------welcome heading--------------------*/
 .welcome-heading{
     color: rgba(9, 197, 34, 0.8);
     font-family: "Dancing Script", cursive;
 }
-.welcome-sub-heading1{
-    color: rgba(247, 12, 12, 0.6);
-    font-family: "Dancing Script", cursive;
-}
 /*-----------------image----------------------------*/
 .image{
     border-radius: 15px;
     height: 200px;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 20px 0 rgba(0, 0, 0, 0.20);
 }
 /*----------section heading--------------------*/
 .section-header{
@@ -200,7 +199,6 @@ hr {
 }
 
 /*---------------------------------------------------------------------*/
-
 .feature {
     text-align: center;
     margin-bottom: 40px;
@@ -221,4 +219,9 @@ hr {
     margin-top: 10px;
     color: #fff;
 }
-
+/*----------------map-----------*/
+#map {
+  width: auto;
+  height: 250px;
+  margin: 20px;
+}
