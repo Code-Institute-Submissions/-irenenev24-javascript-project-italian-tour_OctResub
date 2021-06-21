@@ -3,44 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Italian Tours 2021</title>
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-custom">
-  <a class="navbar-brand" href="#">ITALY</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="/abruzzo.html">ABRUZZO</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/contact.html">Contact</a>
-      </li>    
-    </ul>
-  </div>  
-</nav>
-</header>
-<div class="hero-image">
-   <img src="assets/images/rome-at-night.jpg" alt="Snow">
-    <div class="centered text-uppercase hero-text">
-    <h1 class="green-welcome">Italy</h1>
-        <p class="white-welcome">Bienvenuto En Italia</p>
-        <p class="red-welcome">Welcome To Italy</p>
-  </div>
-</div>
-
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">ITALY</a>
+            <a href="#rome">ROME</a>
+            <a href="#contact">Contact</a>
+            <a href="abruzzo.html">ABRUZZO</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+ <div id="hero-image-section">
+      <img id="hero-image" src="assets/images/rome3.jpg" alt="rome at night" />
+    </div>
 <section class="features">
     <div class="row">
                 <div class="col-12 my-5">
@@ -85,7 +70,7 @@
            <br>
     </section>
 <section id="map"></section>
-<footer class="container-fluid">
+<!--<footer class="container-fluid">
         <div class="row">
             <div class="col-md-6 text-center">
                 <div class="footer-info">
@@ -109,6 +94,8 @@
             <div class="footer-copyright text-center">
                 <h6 class="footer-legal"><p><small>©Irene Neville | Developer | Course Project</small></p></footer></h6>
             </div>
-    </footer>
+    </footer>-->
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
