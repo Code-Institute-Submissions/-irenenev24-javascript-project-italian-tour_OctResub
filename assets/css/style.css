@@ -219,9 +219,8 @@ hr {
     margin-top: 10px;
     color: #fff;
 }
-/*----------------map-----------*/
+/*----------------map from google-----------*/
 #map {
-  width: auto;
-  height: 250px;
-  margin: 20px;
+  height: 400px;
+  width: 100%;
 }

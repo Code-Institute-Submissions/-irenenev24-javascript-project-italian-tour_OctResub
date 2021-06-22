@@ -82,9 +82,15 @@
            <a href="#" class="btn btn-danger" role="button">SAN VITO LO CAPO</a>
            <br>
     </section>
-<section id="map">
+    <div id="map"></div>
 
-</section>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBEXc5HFNyTH6th5iuelwkVpuiEC5NVk&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+<script src="assets/js/script.js"></script>
+
 <footer class="container-fluid">
         <div class="row">
             <div class="col-md-6 text-center">
@@ -111,7 +117,4 @@
                 <h6 class="footer-legal"><p><small>© Irene Neville | Developer | Course Project</small></p></footer></h6>
             </div>
     </footer>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBEXc5HFNyTH6th5iuelwkVpuiEC5NVk&callback=initMap&libraries=&v=weekly" async></script>
-<script src="assets/js/script.js"></script>
-</body>
 </html>
