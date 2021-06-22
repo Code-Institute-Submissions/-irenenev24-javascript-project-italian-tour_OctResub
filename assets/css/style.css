@@ -100,7 +100,7 @@ body {
 
 /*--------------Footer Section------------------*/
 .footer{
-    background-color: red;
+     background-color: #04AA6D !important;
 }
 /*-------------------Contact Page------
 -------------------Modal Sign Up Form--------------*/
@@ -221,6 +221,6 @@ hr {
 }
 /*----------------map from google-----------*/
 #map {
-  height: 400px;
+  height: 650px;
   width: 100%;
 }
