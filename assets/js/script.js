@@ -6,13 +6,18 @@ let centerCords = {
     lng: 12.56738
 };
 let markersOnMap = [{
-    placeName: "Rome",
-    text: "nbjfuy",
-    LatLng: [{
-       lat:41.902782,
-       lng:12.496366
-    }]
-},
+                placeName: "Rome",
+                text: `<img src="https://images.unsplash.com/photo-1514896856000-91cb6de818e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aXRhbHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" height='200' width='200'>
+                <h3>Colosseum, Rome</h3>
+                <p>The Colosseum housed gladiators who fought to the death</p>
+                <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">Click here for more info</a>
+                <br>`,
+                LatLng: [{
+                    lat:41.902782,
+                    lng:12.496366
+              }]
+            },
+              
 {
     placeName: "Abruzzo",
     text: "fjoer",

@@ -62,25 +62,59 @@ body {
     text-align: left;
   }
 }
-/*-----------------------hero image w3schools amended--------------------*/
-.hero-img{
+
+/*-----------------------------hero-image------------------------------*/
+.home-container {
+    background: url('../images/rome3.jpg') no-repeat bottom center;
+    background-color: rgba(218, 197, 197);
+    background-size: cover;
+    min-height: 100vh;
     width: 100%;
-    border-radius: 15px;
+    margin-bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
-.container{
-    position: relative;
+.hero-sign {
+    width: 80%;
+    background-color: rgba(255, 253, 208, 0.7); 
+    border-radius:1.3rem; 
+    padding: 10px 20px;
+    margin-bottom: 0px;
+  }
+.hero-text {
+    color: #000;
+    text-shadow: 1px 1px #f2f2f2;
+    line-height: 1.2;
+    font-size: 2.1rem;
+    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive;
 }
-.text-block {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: #000000;
-  border-radius: 15px;
-  text-shadow: 2px 1px #f2f2f2;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
+
+
+
+
+
+
+
+/*-----------------------hero image w3schools amended--------------------*
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/images/rome-night-small-2.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
+
+
+
 /*----------welcome heading--------------------*/
 .welcome-heading{
     color: rgba(9, 197, 34, 0.8);
