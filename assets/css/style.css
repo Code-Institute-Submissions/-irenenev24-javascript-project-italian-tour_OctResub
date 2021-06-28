@@ -127,8 +127,11 @@ body {
 /*--------------------------------rome-------------*/
 
 .attractions{
-    color: #f44336;
+    color: rgba(247, 12, 12);
     text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: 1px 1px #000;
+    font-family: "Dancing Script", cursive;
 }
 
 
@@ -194,9 +197,11 @@ body {
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
-  
 }
-
+.img{
+    height: 100px !important;
+    width: 100px;
+}
 
 
 
