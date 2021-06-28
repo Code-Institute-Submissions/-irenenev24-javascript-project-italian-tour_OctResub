@@ -20,7 +20,11 @@ let markersOnMap = [{
               
 {
     placeName: "Abruzzo",
-    text: "fjoer",
+    text: `<img src="assets/images/abruzzo-mountain-small.jpg" height="200" width="200"
+    <h3>Majella National Park, Abruzzo</h3>
+    <p>Majella National Park is home to bears.</p>
+    <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">Click here for more info</a>
+                <br>`,
     LatLng: [{
         lat:42.332668,
         lng:13.522123
@@ -28,7 +32,11 @@ let markersOnMap = [{
 },
 {
     placeName: "Sicily",
-    text: "hdyfgr",
+    text:  `<img src="assets/images/island-favignana-sicily.jpg" height="200" width="200"
+    <h3>Favignana Beach, Sicily</h3>
+    <p>Located in Sicily</p>
+    <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">Click here for more info</a>
+                <br>`,
     LatLng: [{
         lat: 37.500000, 
         lng:15.090278
@@ -73,7 +81,7 @@ function closeOtherInfo() {
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 6,
+        zoom: 5,
         center: centerCords
     });
     addMarkerInfo();

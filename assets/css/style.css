@@ -24,7 +24,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-    text-shadow: 1px 1px #000;
+    text-shadow: 1px 1px #f2f2f2;
     line-height: 1.2;
     font-size: 1.3rem;
     letter-spacing: .8px;
@@ -102,13 +102,18 @@ body {
     letter-spacing: 1.5px;
     font-family: 'Dancing Script', cursive;
 }
+
+.btn-light {
+    background-color: rgba(10, 197, 35, 0.726);
+    border: none;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff;
+}
 /*--------------------------------------end of hero image ------------------------*/
 
-/*----------welcome heading--------------------*/
-.welcome-heading{
-    color: rgba(9, 197, 34, 0.8);
-    font-family: "Dancing Script", cursive;
-}
 /*-----------------image----------------------------*/
 .image{
     border-radius: 15px;
@@ -120,6 +125,56 @@ body {
     text-align: center;
     font-family: "Dancing Script", cursive;
 }
+/*--------------------------------rome-------------*/
+#rome1 {
+    padding: 2rem 0 2.2rem 0;
+    color: #000;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    height: 80vh;
+    background: url('../images/city-small.jpg') center center / cover no-repeat fixed;
+    opacity: 0.7;
+}
+
+#abruzzo2 {
+    padding: 2rem 0 2.2rem 0;
+    color: #f2f2f2;
+    margin-bottom: 80px;
+    height: 80vh;
+    background: url('../images/abruzzo-small-4.jpg') center center / cover no-repeat fixed;
+    opacity: 0.7;
+}
+
+#sicily3 {
+    padding: 2rem 0 2.2rem 0;
+    color: #f2f2f2;
+    margin-bottom: 80px;
+    height: 80vh;
+    background: url('../images/horse-riding-small.jpg') center center / cover no-repeat fixed;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*--------------Footer Section------------------*/
 .footer{
@@ -233,7 +288,7 @@ hr {
     line-height: 45px; 
 }
 
-.feature .btn {
+.feature btn {
     background-color: rgba(10, 197, 35, 0.726);
     border-color: white;
     border-radius: 15px;
