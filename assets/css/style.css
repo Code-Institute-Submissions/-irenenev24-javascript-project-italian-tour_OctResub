@@ -5,7 +5,6 @@
 }
 
 body {
-    background-color: cornsilk !important;
     width: 100%;
     margin:0;
     font-family: 'Roboto', sans-serif;
@@ -71,7 +70,7 @@ body {
 
 /*-----------------------------hero-image------------------------------*/
 .home-container {
-    background: url('../images/rome3.jpg') no-repeat bottom center;
+    background: url('../images/../images/city-small.jpg') no-repeat bottom center;
     background-color: rgba(218, 197, 197);
     background-size: cover;
     min-height: 100vh;
@@ -126,14 +125,22 @@ body {
     font-family: "Dancing Script", cursive;
 }
 /*--------------------------------rome-------------*/
-#rome1 {
+
+.attractions{
+    color: #f44336;
+    text-transform: uppercase;
+}
+
+
+
+#rome1{
     padding: 2rem 0 2.2rem 0;
-    color: #000;
+    color: #fff;
     margin-bottom: 40px;
     margin-top: 40px;
-    height: 80vh;
-    background: url('../images/city-small.jpg') center center / cover no-repeat fixed;
-    opacity: 0.7;
+    height: 60vh;
+    background: url('../images/catacombs-rome-small.jpg') center center / cover no-repeat fixed;
+    opacity: 0.9;
 }
 
 #abruzzo2 {
@@ -142,7 +149,7 @@ body {
     margin-bottom: 80px;
     height: 80vh;
     background: url('../images/abruzzo-small-4.jpg') center center / cover no-repeat fixed;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 #sicily3 {
@@ -151,10 +158,44 @@ body {
     margin-bottom: 80px;
     height: 80vh;
     background: url('../images/horse-riding-small.jpg') center center / cover no-repeat fixed;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 
+/* Float three columns side by side */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  
+}
 
 
 
@@ -177,7 +218,7 @@ body {
 
 
 /*--------------Footer Section------------------*/
-.footer{
+.footer-bg{
      background-color: #04AA6D !important;
 }
 /*-------------------Contact Page------
