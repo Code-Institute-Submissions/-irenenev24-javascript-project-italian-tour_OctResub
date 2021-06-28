@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: cornsilk !important;
     width: 100%;
     margin:0;
     font-family: 'Roboto', sans-serif;
@@ -19,11 +20,15 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+    text-shadow: 1px 1px #000;
+    line-height: 1.2;
+    font-size: 1.3rem;
+    letter-spacing: .8px;
+    font-family: 'Dancing Script', cursive;
 }
 
 .topnav a:hover {
@@ -34,11 +39,12 @@ body {
 .topnav a.active {
   background-color: rgba(9, 197, 34, 0.1);
   color: rgb(241, 4, 4);
+  text-shadow: 1px 1px #f2f2f2;
 }
 
 .topnav .icon {
   display: none;
-  background-color: rgba(247, 12, 12, 0.1);
+  background-color: rgba(247, 12, 12, 0.04);
 }
 
 @media screen and (max-width: 1300px) {
@@ -82,38 +88,21 @@ body {
             justify-content: center;
 }
 .hero-sign {
-    width: 80%;
-    background-color: rgba(255, 253, 208, 0.7); 
+    width: 75%;
+    background-color: rgba(80, 79, 74, 0.596); 
     border-radius:1.3rem; 
     padding: 10px 20px;
     margin-bottom: 0px;
   }
 .hero-text {
-    color: #000;
-    text-shadow: 1px 1px #f2f2f2;
+    color: #f2f2f2;
+    text-shadow: 1px 1px #000;
     line-height: 1.2;
-    font-size: 2.1rem;
-    letter-spacing: 2px;
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
     font-family: 'Dancing Script', cursive;
 }
-
-
-
-
-
-
-
-/*-----------------------hero image w3schools amended--------------------*
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/images/rome-night-small-2.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-
+/*--------------------------------------end of hero image ------------------------*/
 
 /*----------welcome heading--------------------*/
 .welcome-heading{
