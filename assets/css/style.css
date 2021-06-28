@@ -198,10 +198,15 @@ body {
   text-align: center;
   background-color: #f1f1f1;
 }
-.img{
-    height: 100px !important;
-    width: 100px;
+.card, h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
 }
+.card, p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
 
 
 
