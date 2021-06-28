@@ -111,20 +111,14 @@ body {
     margin-top: 10px;
     color: #fff;
 }
-/*--------------------------------------end of hero image ------------------------*/
+/*--------------end of hero image -------------*/
 
-/*-----------------image----------------------------*/
-.image{
-    border-radius: 15px;
-    height: 200px;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 20px 0 rgba(0, 0, 0, 0.20);
-}
-/*----------section heading--------------------*/
+/*----------------section heading--------------*/
 .section-header{
     text-align: center;
     font-family: "Dancing Script", cursive;
 }
-/*--------------------------------rome-------------*/
+/*---------------------rome--------------------*/
 
 .attractions{
     color: rgba(247, 12, 12);
@@ -197,6 +191,7 @@ body {
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
+  height: 750px;
 }
 .card, h3{
     font-family: 'Dancing Script', cursive;
@@ -206,7 +201,15 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
-
+@media screen and (max-width: 500px){
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: 600px;
+}
+}
 
 
 
