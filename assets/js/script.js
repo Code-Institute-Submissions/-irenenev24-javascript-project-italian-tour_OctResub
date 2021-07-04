@@ -81,7 +81,7 @@ function closeOtherInfo() {
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 5,
+        zoom: 4,
         center: centerCords
     });
     addMarkerInfo();
@@ -97,7 +97,7 @@ function initMap() {
   }
 }
 
-//--------------back to top btn
+//--------------back to top btn--w3schools
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
