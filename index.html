@@ -24,6 +24,7 @@
             </a>
         </div>
     </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <section class="home-container" id="home">
         <!--Home page-->
@@ -262,66 +263,45 @@
   </div>
 </div>
 <br>
-<div class="row">
-  <div class="column contact">
-<h1>Frequently Asked Questions</h1>
-<div class="faq-container">
-  <div class="faq active">
-    <h3 class="faq-title">
-      When is the best time to visit Rome?
-    </h3>
+<!---------------------contact------------------->
 
-    <p class="faq-text">
-      Summer months are the best time to visit.
-    </p>
+  <section class="form-container container-fluid pt-2 pb-2" id="contact">
+    <header class="text-center mb-2 mt-2">
+        <h1 class="header-two pb-2">Get In Touch</h1>
+        <p>Should you have any further questions please contact us through the following form.</p>
+    </header>
+    <form class="shadow p-3 mb-3 bg-white rounded text-center pb-4" onsubmit="return sendMail(this);">
+        <div class="row">
+            <div class=" col-md-6 col-sm-12 form-group mb-3">
+                <label for="firstname" class="header-minor form-label mb-2">First Name</label>
+                <input name="firstname" type="text" id="firstname" class="form-control form-input" required>
+            </div>
+            <div class=" col-md-6 col-sm-12 form-group mb-3">
+                <label for="lastname" class="header-minor form-label mb-2">Last Name</label>
+                <input name="lastname" type="text" id="lastname" class="form-control form-input" required>
+            </div>
+            <div class="col-12 col-lg-6 form-group mb-3">
+                <label for="email" class="header-minor form-label mb-2">Email Address</label>
+                <input name="email" type="email" id="email" class="form-control form-input" required>
+            </div>
+            <div class="form-group col-12 col-lg-6 mb-3">
+                <label for="number" class="header-minor form-label mb-2">Phone Number</label>
+                <input name="phone" type="tel" id="number" class="form-control form-input" required>
+            </div>
+            <div class="form-group col-12 mb-3">
+                <label for="message" class="header-minor form-label mb-2">Your Message</label>
+                <textarea name="message" class="form-control form-input" id="message" rows="3" required></textarea>
+            </div>
+            <div class="form-group col-12 mb-3">
+            <input type="checkbox" id="legal" name="legal" value="legal">
+              <label for="legal" required> Please tick to show you have read our <a href="Terms.html">Terms and Conditions</a></label><br>
+              </div>
+          </div>
+        <button type="submit" class="btn form-btn mt-2 red-btn hvr-grow">Send Message</button>
+        
+    </form>
+</section>
 
-    <button class="faq-toggle">
-      <i class="fas fa-chevron-down"></i>
-      <i class="fas fa-times"></i>
-    </button>
-  </div>
-
-  <div class="faq">
-    <h3 class="faq-title">
-      What do you call someone with no body and no nose?
-    </h3>
-    <p class="faq-text">
-      Nobody knows.
-    </p>
-    <button class="faq-toggle">
-      <i class="fas fa-chevron-down"></i>
-      <i class="fas fa-times"></i>
-    </button>
-  </div>
-  <div class="faq">
-    <h3 class="faq-title">
-      What is the weather like?
-    </h3>
-    <p class="faq-text">
-      Inheritance.
-    </p>
-    <button class="faq-toggle">
-      <i class="fas fa-chevron-down"></i>
-      <i class="fas fa-times"></i>
-    </button>
-  </div>
-  
-  <div class="faq">
-    <h3 class="faq-title">
-      How many tickles does it take to tickle an octopus?
-    </h3>
-    <p class="faq-text">
-      Ten-tickles!
-    </p>
-    <button class="faq-toggle">
-      <i class="fas fa-chevron-down"></i>
-      <i class="fas fa-times"></i>
-    </button>
-  </div>
-</div>
-</div>
-<div class="column contact" id="contact">
-  <form action="">sign up</form>
 </div>
 
 
