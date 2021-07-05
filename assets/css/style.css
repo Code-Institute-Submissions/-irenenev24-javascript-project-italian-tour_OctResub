@@ -8,6 +8,7 @@ body {
     width: 100%;
     margin:0;
     font-family: 'Roboto', sans-serif;
+    background-color: seashell;
 }
 
 /*---------taken from w3schools and amended-----------------------*/
@@ -23,11 +24,11 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-    text-shadow: 1px 1px #f2f2f2;
-    line-height: 1.2;
-    font-size: 1.3rem;
-    letter-spacing: .8px;
-    font-family: 'Dancing Script', cursive;
+  text-shadow: 1px 1px #f2f2f2;
+  line-height: 1.2;
+  font-size: 1.3rem;
+  letter-spacing: .8px;
+  font-family: 'Dancing Script', cursive;
 }
 
 .topnav a:hover {
@@ -67,11 +68,15 @@ body {
     text-align: left;
   }
 }
+/*-----------------welcome section------------------------------------*/
+.welcome-contact{
+  color: rgba(10, 197, 35, 0.726);
+  text-transform: uppercase;
+}
 
 /*-----------------------------hero-image------------------------------*/
 .home-container {
     background: url('../images/../images/city-small.jpg') no-repeat bottom center;
-    background-color: rgba(218, 197, 197);
     background-size: cover;
     min-height: 100vh;
     width: 100%;
@@ -127,9 +132,28 @@ body {
     text-shadow: 1px 1px #000;
     font-family: "Dancing Script", cursive;
 }
-
-
-
+.multicolortext {
+  background-image: linear-gradient(to left, red, white, green);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.section-hero-text{
+  font-family: 'Roboto', sans-serif;
+  border-radius: 15px;
+}
+/*----------------w3docs-multicolor word---------*/
+#container {
+  background-color: rgba(56, 53, 53, 0.6) !important;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
 #rome1{
     padding: 2rem 0 2.2rem 0;
     color: #fff;
@@ -212,7 +236,7 @@ body {
 }
 /*--------------Footer Section------------------*/
 .footer-bg{
-     background-color: #04AA6D !important;
+     background-color: rgba(10, 197, 35, 0.726) !important;
 }
 /*---------------------back to top button w3schools and amended---*/
 #myBtn {
@@ -222,8 +246,7 @@ body {
   right: 30px;
   z-index: 99;
   font-size: 18px;
-  border: none;
-  outline: none;
+  border: 1px solid #fff;
   background-color: rgba(247, 12, 12);
   color: white;
   cursor: pointer;
