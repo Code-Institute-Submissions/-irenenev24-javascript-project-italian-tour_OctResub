@@ -6,21 +6,21 @@ let centerCords = {
     lng: 12.56738
 };
 let markersOnMap = [{
-                placeName: "Rome",
-                text: `<img src="https://images.unsplash.com/photo-1514896856000-91cb6de818e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aXRhbHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" height='200' width='200'>
-                <h3>Colosseum, Rome</h3>
-                <p>The Colosseum housed gladiators who fought to the death</p>
-                <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">Click here for more info</a>
-                <br>`,
-                LatLng: [{
-                    lat:41.902782,
-                    lng:12.496366
-              }]
-            },
+    placeName: "Rome",
+    text: `<img src="https://images.unsplash.com/photo-1514896856000-91cb6de818e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aXRhbHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" height='200' width='200'>
+    <h3>Colosseum, Rome</h3>
+    <p>The Colosseum housed gladiators who fought to the death</p>
+    <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">Click here for more info</a>
+    <br>`,
+    LatLng: [{
+        lat:41.902782,
+        lng:12.496366
+    }]
+},
               
 {
     placeName: "Abruzzo",
-    text: `<img src="assets/images/abruzzo-mountain-small.jpg" height="200" width="200"
+    text: `<img src="assets/images/abruzzo-mountain-small.jpg" height="200" width="200">
     <h3>Majella National Park, Abruzzo</h3>
     <p>Majella National Park is home to bears.</p>
     <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">Click here for more info</a>
@@ -32,7 +32,7 @@ let markersOnMap = [{
 },
 {
     placeName: "Sicily",
-    text:  `<img src="assets/images/island-favignana-sicily.jpg" height="200" width="200"
+    text:  `<img src="assets/images/island-favignana-sicily.jpg" height="200" width="200">
     <h3>Favignana Beach, Sicily</h3>
     <p>Located in Sicily</p>
     <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">Click here for more info</a>
@@ -43,7 +43,9 @@ let markersOnMap = [{
     }]
 },
 ];
+//end of good map
 
+//also good map
 window.onload = function () {
     initMap();
 };
@@ -81,7 +83,7 @@ function closeOtherInfo() {
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
+        zoom: 6,
         center: centerCords
     });
     addMarkerInfo();
@@ -99,7 +101,7 @@ function initMap() {
 
 //--------------back to top btn--w3schools
 //Get the button
-var mybutton = document.getElementById("myBtn");
+let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -117,3 +119,26 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+//-----------------attractions buttons
+const rome_attractions= [{
+    location: ['53.182391', '-6.102026'],
+    infowindow: '<p class="infoWindowHeader font-style">Rome</p>' +
+      '<p class="infoWindowText font-style">Enjoy a relaxing and leisurely walk in one of Italy"s best loved cities</p>' +
+      '<p class="infoWindowLink font-style"><a href="http://www.killruddery.com/" target="_blank">Click for more info!</a></p>'
+  },
+  {
+  location: ['53.182391', '-6.102026'],
+  infowindow: '<p class="infoWindowHeader font-style">Rome</p>' +
+    '<p class="infoWindowText font-style">Enjoy a relaxing and leisurely walk in one of Italy"s best loved cities</p>' +
+    '<p class="infoWindowLink font-style"><a href="http://www.killruddery.com/" target="_blank">Click for more info!</a></p>'
+}
+];
+  $('#btn-1').click(function () {
+    SIGHTS_LOCATION.forEach(item => {
+      const {
+        location,
+        infowindow
+      } = item;
+      addmarker(location, infowindow);
+    });
+  });
