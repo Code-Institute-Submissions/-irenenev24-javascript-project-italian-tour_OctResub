@@ -120,33 +120,3 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 //-----------------attractions buttons
-$("#main-button").click(function () {
-
-    location: ['53.182391', '-6.102026'],
-    infowindow: '<p class="infoWindowHeader font-style">Rome</p>' +
-      '<p class="infoWindowText font-style">Enjoy a relaxing and leisurely walk in one of Italy"s best loved cities</p>' +
-      '<p class="infoWindowLink font-style"><a href="http://www.killruddery.com/" target="_blank">Click for more info!</a></p>'
-  },
-  {
-  location: ['53.182391', '-6.102026'],
-  infowindow: '<p class="infoWindowHeader font-style">Rome</p>' +
-    '<p class="infoWindowText font-style">Enjoy a relaxing and leisurely walk in one of Italy"s best loved cities</p>' +
-    '<p class="infoWindowLink font-style"><a href="http://www.killruddery.com/" target="_blank">Click for more info!</a></p>'
-}
-];
-  let rome_attractions = [
-    {
-        location: ['53.182391', '-6.102026'],
-        infowindow: '<p class="infoWindowHeader font-style">Rome</p>' +
-          '<p class="infoWindowText font-style">Enjoy a relaxing and leisurely walk in one of Italy"s best loved cities</p>' +
-          '<p class="infoWindowLink font-style"><a href="http://www.killruddery.com/" target="_blank">Click for more info!</a></p>'
-      },
-      {
-      location: ['53.182391', '-6.102026'],
-      infowindow: '<p class="infoWindowHeader font-style">Rome</p>' +
-        '<p class="infoWindowText font-style">Enjoy a relaxing and leisurely walk in one of Italy"s best loved cities</p>' +
-        '<p class="infoWindowLink font-style"><a href="http://www.killruddery.com/" target="_blank">Click for more info!</a></p>'
-    }
-  ]
-  
-    
