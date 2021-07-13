@@ -134,3 +134,471 @@ const rome_attractions= [{
 }
 ];
   
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+  // Close the dropdown if the user clicks outside of it
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+function myFunction3() {
+    document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+
+var dropdowns = document.getElementsByClassName("dropdown-content");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+  var openDropdown = dropdowns[i];
+  if (openDropdown.classList.contains('show')) {
+    openDropdown.classList.remove('show');
+  }
+}
+}
+}
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+       <img src="../assets/images/sistine-chapel-77.jpg">
+       <h3>Sistine Chapel, <br>Rome</h3>
+        <p>Painted by Michelangelo between 1508 and 1512, the Sistine Chapel is one of the greatest works of art in the world. A must see for anyone visiting Rome.</p>
+           <a href="https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling" class="btn btn-success" role="button">Read More</a>
+      </div>
+    </div>
+
+
+
+
+    <!---------------good html-->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Italian Tours 2021</title>
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">ITALY</a>
+            <a href="#rome1">ROME</a>
+            <a href="#abruzzo2">ABRUZZO</a>
+            <a href="#sicily3">SICILY</a>
+            <a href="#contact">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <section class="home-container" id="home">
+        <!--Home page-->
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12 d-flex justify-content-center ">
+                    <div class="hero-sign text-center">
+                        <h3 class="hero-text">Searching for a new holiday destination? <br>
+                        Welcome to Italy</h3>
+                        <p><a class="btn btn-sm btn-light" href="#contact">Contact Us</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!------welcome---->
+<main>
+<div class="text-center">
+<h1 class="welcome-contact">Bienvenuto En Italia</h1>
+<p>Welcome to Italy</p>
+<p>Italy, 
+<br>a European country with a long Mediterranean coastline, which has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins.</p></div>
+<!-----------------start of rome------------------->
+<div id="rome1">
+  <br><br>
+  <div id="container" class="section-heading-text text-center">
+  <h2><span class="multicolortext">Rome</span></h2>
+  <p>Rome is the capital city and a special comune of Italy, as well as the capital of the Lazio region. <br>The city has been a major human settlement for almost three millennia. </p>
+  </div>
+</div>
+<!-------------------cards from w3schools and amended--------------->
+<div class="text-center attractions">Attractions In Rome</div>
+<br>
+<!-----attractions----->
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img
+          src="../assets/images/sistine-chapel-77.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Sistine Chapel,
+            <br>Rome
+          </h5>
+          <p class="card-text">
+           
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><a href="https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling" class="btn btn-success" role="button">Read More</a></small>
+        </div>
+      </div>
+    </div>
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/trevi-fountain-small-close-up.jpg">
+      <h3>Trevi Fountain, <br>Rome</h3>
+      <p>The Trevi Fountain is a fountain in the Trevi district in Rome, Italy, designed by Italian architect Nicola Salvi and completed by Giuseppe Pannini and several others.</p>
+      <a href="https://en.wikipedia.org/wiki/Trevi_Fountain" class="btn btn-success" role="button">Read More</a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/rome2.jpg">
+      <h3>Cloaca Maxima, <br>Rome</h3>
+      <p>The Cloaca Maxima was one of the world's earliest sewage systems. A testiment to the skilled craftsmen, <br>part still stands today.</p>
+      <a href="https://en.wikipedia.org/wiki/Cloaca_Maxima" class="btn btn-success" role="button">Read More</a>
+    </div>
+  </div>
+</div>
+<br>
+<!----------------hotels------------>
+<div class="text-center attractions">Hotels In Rome</div>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/hotel-savoy-roma.jpg">
+     <h3 style="font-family: 'Dancing Script';">Hotel Savoy Roma, <br>Rome</h3>
+      <p>The Hotel Savoy is a traditional,<br> historical hotel with elegant decors and modern facilities with a superb location.</p>
+         <a href="https://www.tripadvisor.co.uk/Hotel_Review-g187791-d228975-Reviews-Hotel_Savoy_Roma-Rome_Lazio.html" class="btn btn-success" role="button">Book Now</a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/marcalle-hotel-rome.jpg">
+      <h3>Marcella Royal Hotel, <br>Rome</h3>
+      <p>Providing an ideal mix of value, comfort<br> and convenience, it offers a romantic setting with an array of amenities.</p>
+      <a href="https://www.tripadvisor.co.uk/Hotel_Review-g187791-d203172-Reviews-Marcella_Royal_Hotel-Rome_Lazio.html"class="btn btn-success" role="button">Book Now</a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/otivm-rome-hotel.jpg">
+      <h3>Otivm Hotel, <br>Rome</h3>
+      <p>Otivm Hotel offers free breakfast, which will help make your Rome trip <br>additionally gratifying.</p>
+      <a href="https://www.tripadvisor.co.uk/Hotel_Review-g187791-d13329343-Reviews-Otivm_Hotel-Rome_Lazio.html"class="btn btn-success" role="button">Book Now</a>
+    </div>
+  </div>
+</div>
+<!----------------------end of Rome----------------->
+<br>
+<!-----------------------start of Abruzzo----------->
+<div id="abruzzo2">
+  <br><br>
+  <div id="container" class="section-heading-text text-center">
+  <h2><span class="multicolortext">Abruzzo</span></h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  </div>
+  </div>
+<!-----attractions----->
+<div class="text-center attractions">Attractions in Abruzzo</div>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/abruzzo-mountain-small.jpg">
+     <h3>Parco Nazionale d’Abruzzo,<br>Abruzzo</h3>
+      <p>The Parco Nazionale d’Abruzzo was established in 1923 to protect nature and to save certain wild animals from extinction. It’s in the heart of the central Apennines between the Abruzzi, Lazio and Molise and its 50,000+ hectares are home to 25 towns.
+         <a href="https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling" class="btn btn-success" role="button">Read More</a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/lake-scanno-small.jpg">
+      <h3>Lake Scanno, <br> Abruzzo</h3>
+      <p>Located in the Province of L'Aquila, Lake Scanno is known as the heart of Italy due to its distinctive shape. The traditional village of Scanno is located on its northern edge.  The Sagittario flows out of the lake towards the north.</p>
+      <a href="https://en.wikipedia.org/wiki/Trevi_Fountain" class="btn btn-success" role="button">Read More</a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/abruzzo-small-5.jpg">
+      <h3>Castle of Roccascalegna, <br>Abruzzo</h3>
+      <p>Located in the province of Chieti, Castle of Roccascalegna was principally constructed in the 15th and 16th centuries, at a time of military rivalry between the Angevin and Aragonese armies. The castle was featured as a location in the film Tale of Tales.</p>
+      <a href="https://en.wikipedia.org/wiki/Cloaca_Maxima" class="btn btn-success" role="button">Read More</a>
+    </div>
+  </div>
+</div>
+<br>
+<!----------------hotels------------>
+<div class="text-center attractions">Hotels In Abruzzo</div>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/sextantio-3.jpg">
+     <h3 style="font-family: 'Dancing Script';">Sextantio Albergo Diffuso, <br> Abruzzo</h3>
+      <p>A medieval fortified village in Abruzzo region where its rooms, wine bar, restaurant, meeting room and reception lie scattered in separate buildings formerly used as barns, stables, pigsties, wine cellars and farmers' or shepherds' lodgings.</p>
+         <a href="https://www.tripadvisor.ie/Hotel_Review-g1061123-d1047747-Reviews-Sextantio_Albergo_Diffuso-Santo_Stefano_di_Sessanio_Province_of_L_Aquila_Abruzzo.html" class="btn btn-success" role="button">Book Now</a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/rocca-1.jpg">
+      <h3>Rifugio della Rocca,<br> Abruzzo</h3>
+      <p>The Rifugio della Rocca, nestling below the ancient castle at Rocca Calascio, offers a characteristic restaurant and bar, and the "albergo diffuso", a hotel whose lovingly restored rooms and apartments are distributed in various buildings in the village</p>
+      <a href="https://www.tripadvisor.ie/Hotel_Review-g1391961-d1181046-Reviews-Rifugio_della_Rocca-Calascio_Province_of_L_Aquila_Abruzzo.html"class="btn btn-success" role="button">Book Now</a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/g-hotel-pescara.jpg">
+      <h3>G Hotel Pescara, <br>Abruzzo</h3>
+      <p>Given the close proximity of popular landmarks, such as Chiesa del Sacratissimo Cuore di Gesu (0.2 mi) and Corso Umberto I (0.2 mi), guests of G Hotel Pescara can easily experience some of Pescara's most well known attractions.</p>
+      <a href="https://www.tripadvisor.ie/Hotel_Review-g187770-d12292269-Reviews-G_Hotel_Pescara-Pescara_Province_of_Pescara_Abruzzo.html"class="btn btn-success" role="button">Book Now</a>
+    </div>
+  </div>
+</div>
+<!--------------------------end of Abruzzo--------------------->
+<br>
+<!-------------------------start of Sicily--------------------->
+<div id="sicily3">
+  <br><br>
+  <div id="container" class="section-heading-text text-center">
+  <h2><span class="multicolortext">Sicily</span></h2>
+  <p>The Mediterranean's biggest island is separated from the mainland by the Strait of Messina.<br> A mountainous spot, Sicily's coast and its small islands sit at the foot of volcanoes, including Etna, Stromboli and Vulcano. </p>
+</div>
+</div>
+<!-----attractions----->
+<div class="text-center attractions">Attractions in Sicily</div>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/sicily-beach-small.jpg">
+     <h3>San Vito Lo Capo, <br>Sicily</h3>
+      <p>San Vito Lo Capo is a small seaside town in northwestern Sicily, Italy. It’s known for its beach, which is on a sheltered bay overlooked by Mount Monaco.</p>
+         <a href="https://en.wikipedia.org/wiki/San_Vito_Lo_Capo" class="btn btn-success" role="button">Read More</a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/selinunte-sicily.jpg">
+      <h3>Selinunte, <br>Sicily</h3>
+      <p>Selinunte was an ancient Greek city on the south-western coast of Sicily in Italy. It was situated between the valleys of the Cottone and Modione rivers</p>
+      <a href="https://en.wikipedia.org/wiki/Selinunte" class="btn btn-success" role="button">Read More</a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/palermo1.jpg">
+      <h3>Palermo, <br>Sicily</h3>
+      <p>Palermo is the capital of the Italian island of Sicily. The 12th-century Palermo Cathedral houses royal tombs, while the huge neoclassical Teatro Massimo is known for opera performances</p>
+      <a href="https://en.wikipedia.org/wiki/Palermo" class="btn btn-success" role="button">Read More</a>
+    </div>
+  </div>
+</div>
+<br>
+<!----------------hotels------------>
+<div class="text-center attractions">Hotels In Sicily</div>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/mazzaro-sea-palace.jpg">
+     <h3 style="font-family: 'Dancing Script';">Mazzaro Sea Palace, <br>Sicily</h3>
+     <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Read More</button>
+      <div id="myDropdown" class="dropdown-content">
+      <p>At Mazzarò Sea Palace you will be transported to a world made of colours, scents, and history. An exclusive retreat where sun, crystal-clear sea, and exclusive<br> experiences await you.</p>
+         <a href="https://www.tripadvisor.ie/Hotel_Review-g187892-d254201-Reviews-Mazzaro_Sea_Palace_VRetreats-Taormina_Province_of_Messina_Sicily.html" class="btn btn-success" role="button">Book Now</a>
+         </div>
+         </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/hotel-borgo-sicily.jpg">
+      <h3>Hotel Borgo Pantano,<br>Sicily</h3>
+      <div class="dropdown">
+        <button onclick="myFunction2()" class="dropbtn">Read More</button>
+        <div id="myDropdown2" class="dropdown-content">
+      <p>Discover the Hotel Borgo Pantano, a 4 star hotel is just 7 miles from the center and the beaches of Syracuse, Italy.  An ideal compromise between the countryside, sea and city of art, surrounded by nature.</p>
+      <a href="https://www.tripadvisor.ie/Hotel_Review-g187891-d1675716-Reviews-Hotel_Borgo_Pantano-Syracuse_Province_of_Syracuse_Sicily.html"class="btn btn-success" role="button">Book Now</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+     <img src="../assets/images/giardini-mon-plasier-sicily.jpg">
+      <h3>Giardini Mon Plaisir, <br>Sicily</h3>
+      <div class="dropdown">
+        <button onclick="myFunction3()" class="dropbtn">Read More</button>
+        <div id="myDropdown3" class="dropdown-content"><p class="dropdown-text">Giardini Mon Plaisir is a unique charming place in the heart of Trapani, on the north-west side of Sicily. Originally, it was a vegetable garden owned by the historic Adragna family, then, in the 19th century, it became a summer house with a huge garden.</p>
+      <a href="https://www.tripadvisor.ie/Hotel_Review-g494955-d10588143-Reviews-Giardini_Mon_Plaisir-Trapani_Province_of_Trapani_Sicily.html"class="btn btn-success" role="button">Book Now</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!-------------------------------------buttons------------------------------>
+<div id="" class="row">
+  <div class="column text-center buttons">
+    <p class="btn-title">Attractions</p>
+      <button class="btn1 map-btns">Rome</button>
+      <button class="btn1 map-btns">Abruzzo</button>
+      <button class="btn1 map-btns">Sicily</button>
+  </div>
+  <div class="column text-center buttons">
+    <p class="btn-title">Hotels</p>
+    <button class="btn2 map-btns">Rome</button>
+    <button class="btn2 map-btns">Abruzzo</button>
+    <button class="btn2 map-btns">Sicily</button>
+  </div>
+<!--------------------------------------Map---------------------------------->
+<div id="map"></div>
+<script src="assets/js/script.js"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBEXc5HFNyTH6th5iuelwkVpuiEC5NVk&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+<!------------------------------------contact-------------------------------->
+<section class="form-container container-fluid pt-2 pb-2" id="contact">
+    <header class="text-center mb-2 mt-2">
+        <h1 class="header-two pb-2 welcome-contact">Contact Us</h1>
+        <p>Should you have any further questions please contact us through the following form.</p>
+    </header>
+    <form class="shadow p-3 mb-3 bg-white rounded text-center pb-4" onsubmit="return sendMail(this);">
+        <div class="row">
+            <div class=" col-md-6 col-sm-12 form-group mb-3">
+                <label for="firstname" class="header-minor form-label mb-2">First Name</label>
+                <input name="firstname" type="text" id="firstname" class="form-control form-input" required>
+            </div>
+            <div class=" col-md-6 col-sm-12 form-group mb-3">
+                <label for="lastname" class="header-minor form-label mb-2">Last Name</label>
+                <input name="lastname" type="text" id="lastname" class="form-control form-input" required>
+            </div>
+            <div class="col-12 col-lg-6 form-group mb-3">
+                <label for="email" class="header-minor form-label mb-2">Email Address</label>
+                <input name="email" type="email" id="email" class="form-control form-input" required>
+            </div>
+            <div class="form-group col-12 col-lg-6 mb-3">
+                <label for="number" class="header-minor form-label mb-2">Phone Number</label>
+                <input name="phone" type="tel" id="number" class="form-control form-input">
+            </div>
+            <div class="form-group col-12 mb-3">
+                <label for="message" class="header-minor form-label mb-2">Your Message</label>
+                <textarea name="message" class="form-control form-input" id="message" rows="3" required></textarea>
+            </div>
+            <div class="form-group col-12 mb-3">
+            <input type="checkbox" id="legal" name="legal" value="legal">
+              <label for="legal" required>  Please tick to show you have read our <a href="Terms.html">Terms and Conditions</a></label><br>
+              </div>
+          </div>
+        <button type="submit" class="btn form-btn mt-2 red-btn hvr-grow">Send Message</button>
+    </form>
+</section>
+</main>
+<!---------------------------------------footer----------------------------->
+<footer class="container-fluid footer-bg">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <div class="footer-info">
+                    <h5>Contact Information</h5>
+                    <a href="/contact.html">Email Us</a>
+                    <p>Phone Number: +55 6768787</p>
+                    <p><address>Via del Governo Vecchio, 51/52/53, 00186 Roma RM, Italy</address></p>
+                </div>
+            </div>
+          <div class="col-md-6 text-center">
+                <div class="social-links">
+                    <h5 class="footer-heading">Social Links:</h5>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" rel="noopener"><i class=" fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noopener"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter" rel="noopener"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" aria-label="Youtube" rel="noopener"><i class="fa fa-youtube"></i></a>
+                    <a href="https://www.snapchat.com/" target="_blank" aria-label="Snapchat" rel="noopener"><i class="fa fa-snapchat-ghost"></i></a>
+                    <a href="https://www.google.com/" target="_blank" aria-label="Google" rel="noopener"><i class="fa fa-google"></i></a>
+                    <a href="https://www.tripadvisor.com/" target="_blank" aria-label="Trip-advisor" rel="noopener"><i class="fa fa-tripadvisor"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank" aria-label="Pinterest" rel="noopener"><i class="fa fa-pinterest"></i></a>    
+                </div>
+            </div>
+        </div>    
+        <hr>
+            <div class="footer-copyright text-center">
+                <h6 class="footer-legal"><p><small>© Irene Neville | Developer | Course Project</small></p></footer></h6>
+            </div>
+    </footer>
+</html>
+

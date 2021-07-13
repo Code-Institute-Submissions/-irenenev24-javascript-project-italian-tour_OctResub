@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -40,13 +41,12 @@
             </div>
         </div>
     </section>
-
+<!------welcome---->
 <main>
 <div class="text-center">
-<h1 class="welcome-contact">Bienvenuto En Italia</h1>
-<p>Welcome to Italy</p>
-<p>Italy, 
-<br>a European country with a long Mediterranean coastline, which has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins.</p></div>
+<h1 class="welcome-contact-italian">Bienvenuto En Italia</h1>
+<p class="welcome-contact-english">Welcome to Italy</p>
+<p>Italy, a European country with a long Mediterranean coastline,<br> which has left a powerful mark on Western culture and cuisine.<br> Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins.</p></div>
 <!-----------------start of rome------------------->
 <div id="rome1">
   <br><br>
@@ -59,66 +59,116 @@
 <div class="text-center attractions">Attractions In Rome</div>
 <br>
 <!-----attractions----->
-<div class="row">
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/sistine-chapel-77.jpg">
-     <h3>Sistine Chapel, <br>Rome</h3>
-      <p>Painted by Michelangelo between 1508 and 1512, the Sistine Chapel is one of the greatest works of art in the world. A must see for anyone visiting Rome.</p>
-         <a href="https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling" class="btn btn-success" role="button">Read More</a>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img
+          src="../assets/images/sistine-chapel-77.jpg"
+          class="card-img-top"
+          alt="Sistine Chapel"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Sistine Chapel,
+            <br>Rome
+          </h5>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><a href="https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling" class="btn btn-success" role="button">Read More</a></small>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/trevi-fountain-small-close-up.jpg">
-      <h3>Trevi Fountain, <br>Rome</h3>
-      <p>The Trevi Fountain is a fountain in the Trevi district in Rome, Italy, designed by Italian architect Nicola Salvi and completed by Giuseppe Pannini and several others.</p>
-      <a href="https://en.wikipedia.org/wiki/Trevi_Fountain" class="btn btn-success" role="button">Read More</a>
+  <div class="col">
+    <div class="card h-100">
+      <img
+          src="../assets/images/trevi-fountain-small-close-up.jpg"
+          class="card-img-top"
+          alt="Trevi Fountain"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Trevi Fountain,
+            <br>Rome
+          </h5>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><a href="https://en.wikipedia.org/wiki/Trevi-Fountain" class="btn btn-success" role="button">Read More</a></small>
+        </div>
+      </div>
     </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/rome2.jpg">
-      <h3>Cloaca Maxima, <br>Rome</h3>
-      <p>The Cloaca Maxima was one of the world's earliest sewage systems. A testiment to the skilled craftsmen, <br>part still stands today.</p>
-      <a href="https://en.wikipedia.org/wiki/Cloaca_Maxima" class="btn btn-success" role="button">Read More</a>
-    </div>
-  </div>
-</div>
+    <div class="col">
+      <div class="card h-100">
+        <img
+            src="../assets/images/rome2.jpg"
+            class="card-img-top"
+            alt="Cloaca Maxima"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Cloaca Maxima,
+              <br>Rome
+            </h5>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><a href="https://en.wikipedia.org/wiki/Cloaca_Maxima" class="btn btn-success" role="button">Read More</a></small>
+          </div>
+        </div>
+      </div>
+      </div>
 <br>
 <!----------------hotels------------>
 <div class="text-center attractions">Hotels In Rome</div>
 <br>
-<div class="row">
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/hotel-savoy-roma.jpg">
-     <h3 style="font-family: 'Dancing Script';">Hotel Savoy Roma, <br>Rome</h3>
-      <p>The Hotel Savoy is a traditional,<br> historical hotel with elegant decors and modern facilities with a superb location.</p>
-         <a href="https://www.tripadvisor.co.uk/Hotel_Review-g187791-d228975-Reviews-Hotel_Savoy_Roma-Rome_Lazio.html" class="btn btn-success" role="button">Book Now</a>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img
+        src="../assets/images/hotel-savoy-roma.jpg"
+        class="card-img-top"
+        alt="Hotel Savoy"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Hotel Savoy,
+          <br>Rome
+        </h5>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><a href="https://www.tripadvisor.co.uk/Hotel_Review-g187791-d228975-Reviews-Hotel_Savoy_Roma-Rome_Lazio.html" class="btn btn-success" role="button">Read More</a></small>
+      </div>
     </div>
   </div>
-
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/marcalle-hotel-rome.jpg">
-      <h3>Marcella Royal Hotel, <br>Rome</h3>
-      <p>Providing an ideal mix of value, comfort<br> and convenience, it offers a romantic setting with an array of amenities.</p>
-      <a href="https://www.tripadvisor.co.uk/Hotel_Review-g187791-d203172-Reviews-Marcella_Royal_Hotel-Rome_Lazio.html"class="btn btn-success" role="button">Book Now</a>
+  <div class="col">
+    <div class="card h-100">
+      <img
+        src="../assets/images/marcalle-hotel-rome.jpg"
+        class="card-img-top"
+        alt="Marcalle Hotel"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Marcalle Hotel,
+          <br>Rome
+        </h5>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><a href="https://www.tripadvisor.co.uk/Hotel_Review-g187791-d203172-Reviews-Marcella_Royal_Hotel-Rome_Lazio.html" class="btn btn-success" role="button">Read More</a></small>
+      </div>
     </div>
   </div>
-
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/otivm-rome-hotel.jpg">
-      <h3>Otivm Hotel, <br>Rome</h3>
-      <p>Otivm Hotel offers free breakfast, which will help make your Rome trip <br>additionally gratifying.</p>
-      <a href="https://www.tripadvisor.co.uk/Hotel_Review-g187791-d13329343-Reviews-Otivm_Hotel-Rome_Lazio.html"class="btn btn-success" role="button">Book Now</a>
+  <div class="col">
+    <div class="card h-100">
+      <img
+        src="../assets/images/otivm-rome-hotel.jpg"
+        class="card-img-top"
+        alt="Otivm Hotel"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Otivm Hotel,
+          <br>Rome
+        </h5>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><a href="https://www.tripadvisor.co.uk/Hotel_Review-g187791-d13329343-Reviews-Otivm_Hotel-Rome_Lazio.html" class="btn btn-success" role="button">Read More</a></small>
+      </div>
     </div>
   </div>
-</div>
+  </div>
 <!----------------------end of Rome----------------->
 <br>
 <!-----------------------start of Abruzzo----------->
@@ -133,65 +183,115 @@
 <!-----attractions----->
 <div class="text-center attractions">Attractions in Abruzzo</div>
 <br>
-<div class="row">
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/abruzzo-mountain-small.jpg">
-     <h3>Parco Nazionale d’Abruzzo,<br>Abruzzo</h3>
-      <p>The Parco Nazionale d’Abruzzo was established in 1923 to protect nature and to save certain wild animals from extinction. It’s in the heart of the central Apennines between the Abruzzi, Lazio and Molise and its 50,000+ hectares are home to 25 towns.</p>
-         <a href="https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling" class="btn btn-success" role="button">Read More</a>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img
+        src="../assets/images/abruzzo-mountain-small.jpg"
+        class="card-img-top"
+        alt="Abruzzo"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Parco Nazionale d’Abruzzo,
+          <br>Abruzzo
+        </h5>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><a href="https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling" class="btn btn-success" role="button">Read More</a></small>
+      </div>
+    </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img
+      src="../assets/images/lake-scanno-small.jpg"
+      class="card-img-top"
+      alt="Otivm Hotel"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Lake Scanno,
+        <br>Abruzzo
+      </h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="https://www.tripadvisor.co.uk/Hotel_Review-g187791-d13329343-Reviews-Otivm_Hotel-Rome_Lazio.html" class="btn btn-success" role="button">Read More</a></small>
     </div>
   </div>
-
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/lake-scanno-small.jpg">
-      <h3>Lake Scanno, <br> Abruzzo</h3>
-      <p>Located in the Province of L'Aquila, Lake Scanno is known as the heart of Italy due to its distinctive shape. The traditional village of Scanno is located on its northern edge.  The Sagittario flows out of the lake towards the north.</p>
-      <a href="https://en.wikipedia.org/wiki/Trevi_Fountain" class="btn btn-success" role="button">Read More</a>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img
+      src="../assets/images/abruzzo-small-5.jpg"
+      class="card-img-top"
+      alt="Otivm Hotel"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Castle of Roccascalegna,
+        <br>Abruzzo
+      </h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="https://www.tripadvisor.co.uk/Hotel_Review-g187791-d13329343-Reviews-Otivm_Hotel-Rome_Lazio.html" class="btn btn-success" role="button">Read More</a></small>
     </div>
   </div>
-  
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/abruzzo-small-5.jpg">
-      <h3>Castle of Roccascalegna, <br>Abruzzo</h3>
-      <p>Located in the province of Chieti, Castle of Roccascalegna was principally constructed in the 15th and 16th centuries, at a time of military rivalry between the Angevin and Aragonese armies. The castle was featured as a location in the film Tale of Tales.</p>
-      <a href="https://en.wikipedia.org/wiki/Cloaca_Maxima" class="btn btn-success" role="button">Read More</a>
-    </div>
-  </div>
+</div>
 </div>
 <br>
 <!----------------hotels------------>
 <div class="text-center attractions">Hotels In Abruzzo</div>
 <br>
-<div class="row">
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/sextantio-3.jpg">
-     <h3 style="font-family: 'Dancing Script';">Sextantio Albergo Diffuso, <br> Abruzzo</h3>
-      <p>A medieval fortified village in Abruzzo region where its rooms, wine bar, restaurant, meeting room and reception lie scattered in separate buildings formerly used as barns, stables, pigsties, wine cellars and farmers' or shepherds' lodgings.</p>
-         <a href="https://www.tripadvisor.ie/Hotel_Review-g1061123-d1047747-Reviews-Sextantio_Albergo_Diffuso-Santo_Stefano_di_Sessanio_Province_of_L_Aquila_Abruzzo.html" class="btn btn-success" role="button">Book Now</a>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img
+        src="../assets/images/sextantio-3.jpg"
+        class="card-img-top"
+        alt="Abruzzo"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Sextantio Albergo Diffuso,
+          <br>Abruzzo
+        </h5>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><a href="https://www.tripadvisor.ie/Hotel_Review-g1061123-d1047747-Reviews-Sextantio_Albergo_Diffuso-Santo_Stefano_di_Sessanio_Province_of_L_Aquila_Abruzzo.html" class="btn btn-success" role="button">Read More</a></small>
+      </div>
+    </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img
+      src="../assets/images/rocca-1.jpg"
+      class="card-img-top"
+      alt="Abruzzo"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Rifugio della Rocca,
+        <br>Abruzzo
+      </h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="https://www.tripadvisor.ie/Hotel_Review-g1391961-d1181046-Reviews-Rifugio_della_Rocca-Calascio_Province_of_L_Aquila_Abruzzo.html" class="btn btn-success" role="button">Read More</a></small>
     </div>
   </div>
-
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/rocca-1.jpg">
-      <h3>Rifugio della Rocca,<br> Abruzzo</h3>
-      <p>The Rifugio della Rocca, nestling below the ancient castle at Rocca Calascio, offers a characteristic restaurant and bar, and the "albergo diffuso", a hotel whose lovingly restored rooms and apartments are distributed in various buildings in the village</p>
-      <a href="https://www.tripadvisor.ie/Hotel_Review-g1391961-d1181046-Reviews-Rifugio_della_Rocca-Calascio_Province_of_L_Aquila_Abruzzo.html"class="btn btn-success" role="button">Book Now</a>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img
+      src="../assets/images/g-hotel-pescara.jpg"
+      class="card-img-top"
+      alt="Abruzzo"
+    />
+    <div class="card-body">
+      <h5 class="card-title">G Hotel Pescara,
+        <br>Abruzzo
+      </h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="https://www.tripadvisor.ie/Hotel_Review-g187770-d12292269-Reviews-G_Hotel_Pescara-Pescara_Province_of_Pescara_Abruzzo.html" class="btn btn-success" role="button">Read More</a></small>
     </div>
   </div>
-
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/g-hotel-pescara.jpg">
-      <h3>G Hotel Pescara, <br>Abruzzo</h3>
-      <p>Given the close proximity of popular landmarks, such as Chiesa del Sacratissimo Cuore di Gesu (0.2 mi) and Corso Umberto I (0.2 mi), guests of G Hotel Pescara can easily experience some of Pescara's most well known attractions.</p>
-      <a href="https://www.tripadvisor.ie/Hotel_Review-g187770-d12292269-Reviews-G_Hotel_Pescara-Pescara_Province_of_Pescara_Abruzzo.html"class="btn btn-success" role="button">Book Now</a>
-    </div>
-  </div>
+</div>
 </div>
 <!--------------------------end of Abruzzo--------------------->
 <br>
@@ -206,83 +306,119 @@
 <!-----attractions----->
 <div class="text-center attractions">Attractions in Sicily</div>
 <br>
-<div class="row">
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/sicily-beach-small.jpg">
-     <h3>San Vito Lo Capo, <br>Sicily</h3>
-      <p>San Vito Lo Capo is a small seaside town in northwestern Sicily, Italy. It’s known for its beach, which is on a sheltered bay overlooked by Mount Monaco.</p>
-         <a href="https://en.wikipedia.org/wiki/San_Vito_Lo_Capo" class="btn btn-success" role="button">Read More</a>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img
+        src="../assets/images/sicily-beach-small.jpg"
+        class="card-img-top"
+        alt="Abruzzo"
+      />
+      <div class="card-body">
+        <h5 class="card-title">San Vito Lo Capo,
+          <br>Sicily
+        </h5>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><a href="https://en.wikipedia.org/wiki/San_Vito_Lo_Capol" class="btn btn-success" role="button">Read More</a></small>
+      </div>
+    </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img
+      src="../assets/images/selinunte-sicily.jpg"
+      class="card-img-top"
+      alt="Abruzzo"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Selinunte,
+        <br>Sicily
+      </h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="https://en.wikipedia.org/wiki/Selinunte" class="btn btn-success" role="button">Read More</a></small>
     </div>
   </div>
-
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/selinunte-sicily.jpg">
-      <h3>Selinunte, <br>Sicily</h3>
-      <p>Selinunte was an ancient Greek city on the south-western coast of Sicily in Italy. It was situated between the valleys of the Cottone and Modione rivers</p>
-      <a href="https://en.wikipedia.org/wiki/Selinunte" class="btn btn-success" role="button">Read More</a>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img
+      src="../assets/images/palermo1.jpg"
+      class="card-img-top"
+      alt="Abruzzo"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Palermo,
+        <br>Sicily
+      </h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="https://en.wikipedia.org/wiki/Palermo" class="btn btn-success" role="button">Read More</a></small>
     </div>
   </div>
-  
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/palermo1.jpg">
-      <h3>Palermo, <br>Sicily</h3>
-      <p>Palermo is the capital of the Italian island of Sicily. The 12th-century Palermo Cathedral houses royal tombs, while the huge neoclassical Teatro Massimo is known for opera performances</p>
-      <a href="https://en.wikipedia.org/wiki/Palermo" class="btn btn-success" role="button">Read More</a>
-    </div>
-  </div>
+</div>
 </div>
 <br>
 <!----------------hotels------------>
 <div class="text-center attractions">Hotels In Sicily</div>
 <br>
-<div class="row">
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/mazzaro-sea-palace.jpg">
-     <h3 style="font-family: 'Dancing Script';">Mazzaro Sea Palace, <br>Sicily</h3>
-     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Read More</button>
-      <div id="myDropdown" class="dropdown-content">
-      <p>At Mazzarò Sea Palace you will be transported to a world made of colours, scents, and history. An exclusive retreat where sun, crystal-clear sea, and exclusive<br> experiences await you.</p>
-         <a href="https://www.tripadvisor.ie/Hotel_Review-g187892-d254201-Reviews-Mazzaro_Sea_Palace_VRetreats-Taormina_Province_of_Messina_Sicily.html" class="btn btn-success" role="button">Book Now</a>
-         </div>
-         </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/hotel-borgo-sicily.jpg">
-      <h3>Hotel Borgo Pantano,<br>Sicily</h3>
-      <div class="dropdown">
-        <button onclick="myFunction2()" class="dropbtn">Read More</button>
-        <div id="myDropdown2" class="dropdown-content">
-      <p>Discover the Hotel Borgo Pantano, a 4 star hotel is just 7 miles from the center and the beaches of Syracuse, Italy.  An ideal compromise between the countryside, sea and city of art, surrounded by nature.</p>
-      <a href="https://www.tripadvisor.ie/Hotel_Review-g187891-d1675716-Reviews-Hotel_Borgo_Pantano-Syracuse_Province_of_Syracuse_Sicily.html"class="btn btn-success" role="button">Book Now</a>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img
+        src="../assets/images/mazzaro-sea-palace.jpg"
+        class="card-img-top"
+        alt="Abruzzo"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Mazzaro Sea Palace,
+          <br>Sicily
+        </h5>
       </div>
+      <div class="card-footer">
+        <small class="text-muted"><a href="https://www.tripadvisor.ie/Hotel_Review-g187892-d254201-Reviews-Mazzaro_Sea_Palace_VRetreats-Taormina_Province_of_Messina_Sicily.html" class="btn btn-success" role="button">Read More</a></small>
       </div>
     </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-     <img src="../assets/images/giardini-mon-plasier-sicily.jpg">
-      <h3>Giardini Mon Plaisir, <br>Sicily</h3>
-      <div class="dropdown">
-        <button onclick="myFunction3()" class="dropbtn">Read More</button>
-        <div id="myDropdown3" class="dropdown-content"><p class="dropdown-text">Giardini Mon Plaisir is a unique charming place in the heart of Trapani, on the north-west side of Sicily. Originally, it was a vegetable garden owned by the historic Adragna family, then, in the 19th century, it became a summer house with a huge garden.</p>
-      <a href="https://www.tripadvisor.ie/Hotel_Review-g494955-d10588143-Reviews-Giardini_Mon_Plaisir-Trapani_Province_of_Trapani_Sicily.html"class="btn btn-success" role="button">Book Now</a>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img
+          src="../assets/images/hotel-borgo-sicily.jpg"
+          class="card-img-top"
+          alt="Abruzzo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Hotel Borgo Pantano,
+            <br>Sicily
+          </h5>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><a href="https://www.tripadvisor.ie/Hotel_Review-g187891-d1675716-Reviews-Hotel_Borgo_Pantano-Syracuse_Province_of_Syracuse_Sicily.html" class="btn btn-success" role="button">Read More</a></small>
+        </div>
       </div>
-      </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img
+      src="../assets/images/giardini-mon-plasier-sicily.jpg"
+      class="card-img-top"
+      alt="Abruzzo"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Giardini Mon Plaisir,
+        <br>Sicily
+      </h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="https://www.tripadvisor.ie/Hotel_Review-g494955-d10588143-Reviews-Giardini_Mon_Plaisir-Trapani_Province_of_Trapani_Sicily.html" class="btn btn-success" role="button">Read More</a></small>
     </div>
   </div>
 </div>
+</div>
 <br>
 <!-------------------------------------buttons------------------------------>
-<div id="" class="row">
+<div id="buttons" class="row">
   <div class="column text-center buttons">
     <p class="btn-title">Attractions</p>
       <button class="btn1 map-btns">Rome</button>
@@ -294,6 +430,7 @@
     <button class="btn2 map-btns">Rome</button>
     <button class="btn2 map-btns">Abruzzo</button>
     <button class="btn2 map-btns">Sicily</button>
+  </div>
   </div>
 <!--------------------------------------Map---------------------------------->
 <div id="map"></div>
@@ -371,3 +508,5 @@
             </div>
     </footer>
 </html>
+
+
