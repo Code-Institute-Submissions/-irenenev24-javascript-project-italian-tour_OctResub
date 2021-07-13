@@ -210,7 +210,7 @@ body {
   .column {
     width: 100%;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
 }
 
@@ -233,10 +233,11 @@ body {
 @media screen and (max-width: 500px){
     .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  padding: 16px;
+  padding: 3px;
   text-align: center;
+  font-size: .3rem;
   background-color: #f1f1f1;
-  height: 600px;
+  height: 400px;
 }
 }
 /*--------------Footer Section------------------*/
@@ -282,7 +283,9 @@ footer h5{
 .footer-copyright{
   padding-bottom: 10px;
 }
-
+.buttons{
+  width: 50%;
+}
 /*------icons taken from w3schools and amended*/
 .fa {
   padding: 20px;
@@ -450,3 +453,41 @@ a:active.map-btns {
     text-shadow: 1px 1px #000;
   }
 }
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
