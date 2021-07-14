@@ -43,49 +43,52 @@ let markersOnMap = [{
     }]
 },
 ];
-
 window.onload = function () {
-    initMap();
+  initMap();
 };
 
 function addMarkerInfo() {
-    for (let i = 0; i < markersOnMap.length; i++) {
-        let contentString = '<div id="content"><h2>' + markersOnMap[i].placeName +
-            '</h2><p>' + markersOnMap[i].text + '</p></div>';
+  for (let i = 0; i < markersOnMap.length; i++) {
+      let contentString = '<div id="content"><h2>' + markersOnMap[i].placeName +
+          '</h2><p>' + markersOnMap[i].text + '</p></div>';
 
-        const marker = new google.maps.Marker({
-            position: markersOnMap[i].LatLng[0],
-            map: map
-        });
+      const marker = new google.maps.Marker({
+          position: markersOnMap[i].LatLng[0],
+          map: map
+      });
 
-        const infowindow = new google.maps.InfoWindow({
-            content: contentString,
-            maxWidth: 200
-        });
+      const infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          maxWidth: 200
+      });
 
-        marker.addListener('click', function () {
-            closeOtherInfo();
-            infowindow.open(marker.get('map'), marker);
-            infoObject[0] = infowindow;
-        });
-    }
+      marker.addListener('click', function () {
+          closeOtherInfo();
+          infowindow.open(marker.get('map'), marker);
+          infoObject[0] = infowindow;
+      });
+  }
 }
 
 function closeOtherInfo() {
-    if (infoObject.length > 0) {
-        infoObject[0].set("marker", null);
-        infoObject[0].close();
-        infoObject.length = 0;
-    }
+  if (infoObject.length > 0) {
+      infoObject[0].set("marker", null);
+      infoObject[0].close();
+      infoObject.length = 0;
+  }
 }
 
 function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 6,
-        center: centerCords
-    });
-    addMarkerInfo();
+  map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 6,
+      center: centerCords
+  });
+  addMarkerInfo();
 }
+
+infoWindow.addListener('closeclick', ()=>{
+// Handle focus manually.
+});
 
  //-------------------------nav
  function myFunction() {
@@ -118,6 +121,5 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 //-----------------attractions buttons
-
 
   

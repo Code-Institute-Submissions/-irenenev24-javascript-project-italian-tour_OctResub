@@ -414,3 +414,22 @@ a:active.map-btns {
     text-shadow: 1px 1px #000;
   }
 }
+
+#map-buttons-div {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.map-buttons {
+  width: 10em;
+  height: auto;
+  margin: 5px 5px;
+  color: #ffffff;
+  background-color: #2d7549;
+  border: none;
+  font-size: 3vw;
+  box-shadow: 5px 5px 10px #808080;
+}
