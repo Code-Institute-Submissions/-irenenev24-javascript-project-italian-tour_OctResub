@@ -6,8 +6,9 @@ let centerCords = {
     lng: 12.56738
 };
 let markersOnMap = [{
-    placeName: "Sistine Chapel, Rome",
-    text: `<img src="assets/images/sistine-chapel-77.jpg" height='200' width='200'>
+    placeName: "Rome",
+    text: `<img src="https://images.unsplash.com/photo-1514896856000-91cb6de818e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aXRhbHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" height='200' width='200'>
+    <h3>Colosseum, Rome</h3>
     <p>The Colosseum housed gladiators who fought to the death</p>
     <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">Click here for more info</a>
     <br>`,
@@ -18,14 +19,15 @@ let markersOnMap = [{
 },
               
 {
-    placeName: "Trevi Fountain, Rome",
-    text: `<img src="assets/images/trevi-fountain-small-close-up.jpg" height="200" width="200">
+    placeName: "Abruzzo",
+    text: `<img src="assets/images/abruzzo-mountain-small.jpg" height="200" width="200">
+    <h3>Majella National Park, Abruzzo</h3>
     <p>Majella National Park is home to bears.</p>
     <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">Click here for more info</a>
                 <br>`,
     LatLng: [{
-        lat:41.9029,
-        lng:12.4545
+        lat:42.332668,
+        lng:13.522123
     }]
 },
 {
@@ -78,7 +80,7 @@ function closeOtherInfo() {
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 7,
+      zoom: 6,
       center: centerCords
   });
   addMarkerInfo();
@@ -94,30 +96,12 @@ function initMap() {
   }
 }
 
-//--------------back to top btn--w3schools
-//Get the button
-let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
-}
-
-
-// Testing the addMarker function 
-function TestMarker() { 
-Marker1=new google.maps.LatLng(52.268000,-3.043000); addMarker(Marker1); 
-Marker23=new google.maps.LatLng(51.524243,-3.193911); addMarker(Marker23); 
-Marker24=new google.maps.LatLng(51.524243,-3.193911); addMarker(Marker24); 
-Marker25=new google.maps.LatLng(51.524243,-3.193911); addMarker(Marker25); 
-Marker26=new google.maps.LatLng(51.524243,-3.193911); addMarker(Marker26); 
-Marker584=new google.maps.LatLng(51.747777,-3.500599); addMarker(Marker584); 
-Marker585=new google.maps.LatLng(51.608871,-3.647570); addMarker(Marker585); 
-
-} 
+  //-----------------attractions buttons
+  
+  
