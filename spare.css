@@ -452,3 +452,16 @@ a:active.map-btns {
     text-shadow: 1px 1px #000;
   }
 }
+
+
+
+
+<div class="row">
+<div class="col-md-6 text-center">
+    <div class="footer-info">
+        <h5>Contact Information</h5>
+        <a href="/contact.html">Email Us</a>
+        <p>Phone Number: +55 6768787</p>
+        <p><address>Via del Governo Vecchio, 51/52/53, 00186 Roma RM, Italy</address></p>
+    </div>
+</div>

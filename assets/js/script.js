@@ -41,6 +41,15 @@ let markersOnMap = [{
     }]
 },
 ];
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 7,
+      center: centerCords
+  });
+  addMarkerInfo();
+}
+
 window.onload = function () {
   initMap();
 };
@@ -84,6 +93,8 @@ function initMap() {
   addMarkerInfo();
 }
 
+
+
  //-------------------------nav
  function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -95,8 +106,7 @@ function initMap() {
 }
 
 //--------------back to top btn--w3schools
-//Get the button
-let mybutton = document.getElementById("myBtn");
+var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -109,15 +119,9 @@ function scrollFunction() {
   }
 }
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
-// Testing the addMarker function 
-function TestMarker() { 
-Marker1=new google.maps.LatLng(52.268000,-3.043000); addMarker(Marker1); 
-Marker23=new google.maps.LatLng(51.524243,-3.193911); addMarker(Marker23); 
-Marker24=new google.maps.LatLng(51.524243,-3.193911); addMarker(Marker24); 
-Marker25=new google.maps.LatLng(51.524243,-3.193911); addMarker(Marker25); 
-Marker26=new google.maps.LatLng(51.524243,-3.193911); addMarker(Marker26); 
-Marker584=new google.maps.LatLng(51.747777,-3.500599); addMarker(Marker584); 
-Marker585=new google.maps.LatLng(51.608871,-3.647570); addMarker(Marker585); 
-
-} 
