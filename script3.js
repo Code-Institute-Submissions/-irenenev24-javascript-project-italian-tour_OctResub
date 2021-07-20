@@ -32,8 +32,8 @@ let markersOnMap = [{
 },
 {
     placeName: "Sicily",
-    text:  `<img src="assets/images/island-favignana-sicily.jpg" height="200" width="200">
-    <h3>Favignana Beach, Sicily</h3>
+    text:  `<img src="assets/images/island-favignana-sicily.jpg">
+    <h3 class="text-center">Favignana Beach, Sicily</h3>
     <p>Located in Sicily</p>
     <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">Click here for more info</a>
                 <br>`,
@@ -52,10 +52,12 @@ function addMarkerInfo() {
       let contentString = '<div id="content"><h2>' + markersOnMap[i].placeName +
           '</h2><p>' + markersOnMap[i].text + '</p></div>';
 
-      const marker = new google.maps.Marker({
+      const marker = new google.maps.Markers({
           position: markersOnMap[i].LatLng[0],
           map: map
       });
+
+        let markers = []
 
       const infowindow = new google.maps.InfoWindow({
           content: contentString,
