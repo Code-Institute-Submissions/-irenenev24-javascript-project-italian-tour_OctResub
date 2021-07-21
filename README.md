@@ -1,7 +1,9 @@
-# **Italian Tours 2020.**
+# **Italian Tours 2020**
 
 This website is used to promote three different areas in Italy.
-Rome, Abruzzo and Sicily.
+- Rome
+- Abruzzo 
+- Sicily
 
 ## UX
 
@@ -20,9 +22,8 @@ Rome, Abruzzo and Sicily.
 * Clear information on the three featured areas.
 * Information on attractions in each place.
 * Information on hotels and how to book.
-* IClear contact form to get more information if required.
-* A trustworthy, easy to navigate site that gives clear information about the  
-  bar.
+* Clear contact form to get more information if required.
+* A trustworthy, easy to navigate site that gives clear information about the featured areas.
 * Multiple ways to contact the page admin's including links to social media pages.
 
 
@@ -31,9 +32,9 @@ Rome, Abruzzo and Sicily.
 1. Build on and extend the awareness around these areas.
 1. Showcase attractions and hotels in each area. 
 1. Promote Italy as a destination for every kind of holiday, relaxing beach break in Sicily.
-   Nature lovers holiday in wild Abruzzo and finally a city of culture break in Rome.
+1. Nature lovers holiday in wild Abruzzo and finally a city of culture break in Rome.
 1. Using links to wikipedia and tripadvisor, potential clients have access to multiple information 
-   sources to help plan their holiday.
+1. sources to help plan their holiday.
 1. Promote social media pages.
 
 ### Customer Goals:
@@ -66,9 +67,9 @@ Rome, Abruzzo and Sicily.
 
 * How to book hotels?.
 * What the regions have to offer? 
-  Rome - City break
-  Abruzzo - Nature lovers holiday.
-  Sicily - Sun worshippers holiday.
+  - Rome - City break
+  - Abruzzo - Nature lovers holiday.
+  - Sicily - Sun worshippers holiday.
 * A gallery to show pictures of the items on offer here.
 * How to contact for further information.
 * A review section.
@@ -86,7 +87,7 @@ Rome, Abruzzo and Sicily.
 ### Skeleton
 
 * Nav bar featuring links to various areas in the site.
-* Hero image with a welcome paaragraph about Italy featuring a contact button for ease of use..
+* Hero image with a welcome paaragraph about Italy featuring a contact button for ease of use.
 * Clickable links to tripadvisor and wikipedia for hotel bookings and info.
 * Contact for with email address, message, phone number, name.
 * Section with address, e-mail and telephone number.
@@ -154,75 +155,8 @@ In the future I would like to build on to this site by adding:
 * Google Maps
 
 ### Testing
-
-* W3Schools HTML/CSS validator. 
-  - Picked up a few small errors eg: extra > and unclosed CSS tags in two areas.
-    Fixed these issues and ran again. This returned a "Congratulations, no error found" message.
-    ![w3schools-css-validator]("assets/images/screenshotw3s.png").
-
-* Tested across multiple device sizes.
-  - Found on smaller screen sizes (e.g: Galaxy Fold, iPhone 5,SE) the hero image and hero text were too large, 
-    off center or at times took over the screen view. Also the reviewer images were distorted when skrunk down.
-    After speaking with my mentor Brian Macharia, he suggested that maybe my image size was unsuitable for what 
-    I was trying to do and how if I changed the size of my downloaded image it might suit better.
-    I also added media queries at (max-300) and (max-400) to control the size of the text as the screen shrinks.
-
-    - @media screen and (max-width: 400px) {       |       @media screen and (max-width: 300px) {
-      .hero-text-h1 {                              |         .hero-text-h1{
-          font-size: 3.4rem;                       |             font-size: 3rem;
-          margin: 0;                               |              margin: 0;
-        }                                          |           }
-      }                                            |          }
-
-
-  - Changing the image size also helped with the performance section in DevTool Lighthouse. My performance was 58 becasue my images 
-    were too large. This is now 78 for the home page. 
-    
-* Also during testing I discovered that I needed to insert @media queries for my form and menu pages as they were not 
-   responding correctly on small devices.
-  - Form: 
-     @media screen and (max-width: 800px) {
-        input[type=text], input[type=email], select, textarea {
-            width: 100%;
-            margin-top: 0;
-        }
-        legend {
-            font-size: 1.5rem;
-        }
-   }
-  - Menu:
-    @media screen and (max-width: 1200px) {
-        .column {
-            width: 100%;
-        }
-    }
-    
-* While doing a last test I noticed that my images on the small screen were too large to fit and so were sending my
-   nav bar toggler icon to the left. About multiple attemps to resize the pics, which didnt work, I searched online and found an article 
-   which suggested using flexbox to create a responsive gallery. This required rewriting the gallery code and adding media queries
-   at two different screen sizes, (min-600px) and (min-1000px).
-    
-  -     @media screen and (min-width: 600px) {     |       @media screen and (min-width: 1000px) {
-      .grid {                                      |         .cell {
-          display: flex;                           |                width: 33%;
-          flex-wrap: wrap;                         |                background-color: black;
-          flex-direction: row;                     |                }
-      }                                            |              }
-      .cell {                                      |
-          width: 50%;                              |
-          background-color: black;                 |
-            }                                      |
-      }                                            |
-   
-   This causes the gallery to appear stacked in one single row on a phone screen,
-   stacked in two rows on a tablet screen and as a grid of three rows on a desktop screen. 
-   This also helped with the performance section of  DevTool Lighthouse which was at 68 but is now at 76.
-
-* I also recieved feed-back about the font selection from friends who felt the font I had originally selected
-   did not suit the site, so I changed it to "Courgette", cursive, "Roboto Slan", serif.
-
-* While using DevTools Lighthouse it suggested I put description tags in the mate section. Also included are tag
-  words which help with searches and accessibility.
+* Located in seperate file
+(assets.testing.md)
 
 ### User stories ####################
 

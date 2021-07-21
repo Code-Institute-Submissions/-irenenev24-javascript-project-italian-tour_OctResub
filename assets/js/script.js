@@ -1,114 +1,157 @@
+let map;
+let infoObject = [];
+let centerCords = {
+    lat: 41.8719, 
+    lng: 12.5674
+};
 let locations = [
-    { lat:41.9028, lng:12.4964, placeName: "Sistine Chapel, Rome",
-    text: `<img src="assets/images/sistine-chapel-77.jpg" height='200' width='200'>
-    <p>The Colosseum housed gladiators who fought to the death</p>
-    <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">Click here for more info</a>
-    <br>` },//Rome
-    { lat:41.902782, lng:12.496366 },//Sistine Chapel, Rome
-    { lat:41.9029, lng:12.4545 },//Trevi Fountain, Rome
-    { lat:41.8887, lng:12.4802 },//Cloaca Maxima, Rome
-    { lat:42.1920, lng:13.7289 },//Abruzzo
-    { lat:41.9217, lng:13.8637 },//Lake Scanno, Abruzzo
-    { lat:42.0626, lng:14.3049 },//Castle Of Roccascalegna, Abruzzo
-    { lat:41.8088, lng:13.7901 },//Parco Nazionale D’Abruzzo, Abruzzo
-    { lat:37.500000, lng:15.090278 },//sicily
-    { lat:38.1750, lng:12.7335 },//San Vito Lo Capo, Sicily
-    { lat:37.5834, lng:12.8252 },//Selinute, Sicily
-    { lat:38.1157, lng: 13.3615 }//Palermo, Siciliy
+  { lat:41.9028, lng:12.4964 },//Rome
+  { lat:41.9027, lng:12.4963 },//Sistine Chapel, Rome
+  { lat:41.9029, lng:12.4545 },//Trevi Fountain, Rome
+  { lat:41.8887, lng:12.4802 },//Cloaca Maxima, Rome
+  { lat:42.1920, lng:13.7289 },//Abruzzo
+  { lat:41.9217, lng:13.8637 },//Lake Scanno, Abruzzo
+  { lat:42.0626, lng:14.3049 },//Castle Of Roccascalegna, Abruzzo
+  { lat:41.8088, lng:13.7901 },//Parco Nazionale D’Abruzzo, Abruzzo
+  { lat:37.5000, lng:15.0902 },//sicily
+  { lat:38.1750, lng:12.7335 },//San Vito Lo Capo, Sicily
+  { lat:37.5834, lng:12.8252 },//Selinute, Sicily
+  { lat:38.1157, lng:13.3615 }//Palermo, Siciliy
 ];
-
-function initMap() {
-  let map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 6,
-      center: { lat: 41.87194, lng: 12.56738 }
-  });
-
-  const contentString = [{
+let markersOnMap = [{
     placeName: "Sistine Chapel, Rome",
-    text: `<img src="assets/images/sistine-chapel-77.jpg" height='200' width='200'>
-    <p>The Colosseum housed gladiators who fought to the death</p>
-    <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">Click here for more info</a>
-    <br>`,
+    text: `<img src="assets/images/sistine-chapel-77.jpg" height="100" width="100">
+    <p>The Sistine Chapel famous for its ceiling painted by Michelangelo</p>
+    <a href="https://en.wikipedia.org/wiki/Sistine_Chapel" target="_blank">Click here for more info</a>`,
     LatLng: [{
-        lat:41.902782,
-        lng:12.496366
+      lat: 41.9029,
+      lng: 12.4545
     }]
 },
-              
 {
     placeName: "Trevi Fountain, Rome",
-    text: `<img src="assets/images/trevi-fountain-small-close-up.jpg" height="200" width="200">
+    text: `<img src="assets/images/trevi-fountain-small-close-up.jpg" height="100" width="100">
     <p>Majella National Park is home to bears.</p>
-    <a href="https://en.wikipedia.org/wiki/Colosseum" target="_blank">Click here for more info</a>
-                <br>`,
+    <a href="https://en.wikipedia.org/wiki/Trevi-Fountain" target="_blank">Click here for more info</a>`,
     LatLng: [{
-        lat:44.9029,
-        lng:12.4545
+        lat: 41.9009,
+        lng: 12.4833
     }]
 },
-  ];
-const infowindow = new google.maps.InfoWindow({
-    content: contentString,
-  });
-  const marker = new google.maps.Marker({
-    position: { lat:41.902782, lng:12.496366 }, 
-    map,
- 
-  });
-  marker.addListener("click", () => {
-    infowindow.open({
-      anchor: marker,
-      map,
-    });
-  });
-  let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+{
+  placeName: "Cloaca Maxima, Rome",
+  text: `<img src="assets/images/rome2.jpg" height="100" width="100">
+  <p>The oldest surviving sewerage system still stands in Rome, Italy</p>
+  <a href="https://en.wikipedia.org/wiki/Cloaca_Maxima" target="_blank">Click here for more info</a>`,
+    LatLng: [{
+      lat: 41.8887,
+      lng: 12.4802
+  }]
+},
+{
+  placeName: "Parco Nazionale d’Abruzzo, Abruzzo",
+  text: `<img src="assets/images/abruzzo-mountain-small.jpg" height="100" width="100">
+  <p>Abruzzo contains many lakes, mountains and wildlife reserves.</p>
+  <a href="https://en.wikipedia.org/wiki/Abruzzo,_Lazio_and_Molise_National_Park" target="_blank">Click here for more info</a>`,
+    LatLng: [{
+      lat: 41.8088, 
+      lng: 13.7901
+  }]
+},
+{
+  placeName: "Lake Scanno, Abruzzo",
+  text: `<img src="assets/images/abruzzo-small-5.jpg" height="100" width="100">
+  <p>This heart shaped lake is the largest in Italy.</p>
+  <a href="https://en.wikipedia.org/wiki/Lago_di_Scanno" target="_blank">Click here for more info</a>`,
+    LatLng: [{
+      lat: 41.9217, 
+      lng: 13.8637
+  }]
+},
+{
+  placeName: "Castle of Roccascalegna, Abruzzo",
+  text: `<img src="assets/images/sicily-beach-small.jpg" height="100" width="100">
+  <p>Located high in the hills, this castle was principally constructed in the 15th and 16th centuries.</p>
+  <a href="https://en.wikipedia.org/wiki/Castello_di_Roccascalegna" target="_blank">Click here for more info</a>`,
+    LatLng: [{
+      lat: 42.0626, 
+      lng: 14.3049
+  }]
+},
+{
+    placeName: "Favignana Beach, Sicily",
+    text: `<img src="assets/images/island-favignana-sicily.jpg" height="100" width="100">
+    <p>Located in Sicily</p>
+    <a href="https://en.wikipedia.org/wiki/Favignana" target="_blank">Click here for more info</a>`,
+    LatLng: [{
+        lat: 37.56, 
+        lng: 12.37
+    }]
+},
+{
+  placeName: "Palermo, Sicily",
+  text: `<img src="assets/images/palermo1.jpg" height="100" width="100">
+  <p>Palermo is the capital city of Sicily.</p>
+  <a href="https://en.wikipedia.org/wiki/Palermo" target="_blank">Click here for more info</a>`,
+    LatLng: [{
+        lat: 38.1157, 
+        lng:13.3615
+  }]
+},
+{
+  placeName: "San Vito Lo Capo, Sicily",
+  text: `<img src="assets/images/sicily-beach-small.jpg" height="100" width="100">
+  <p>San Vito Lo Capo is a small seaside town in northwestern Sicily, Italy</p>
+  <a href="https://en.wikipedia.org/wiki/San_Vito_Lo_Capo" target="_blank">Click here for more info</a>`,
+    LatLng: [{
+      lat: 38.1750,
+      lng: 12.7335
+  }]
+},
 
-  let markers = locations.map(function(location, i) {
-      return new google.maps.Marker({
-          position: location,
-          label: labels[i % labels.length]
+];
+window.onload = function () {
+  initMap();
+};
+function addMarkerInfo() {
+  for (let i = 0; i < markersOnMap.length; i++) {
+      let contentString = '<div id="content" class="text-center">' + '<h2 style="font-family: Dancing Script, cursive">' + markersOnMap[i].placeName + '</h2>' + 
+      '<p style="font-family: Roboto, sans-serif">' + markersOnMap[i].text + '</p></div>';
+
+      const marker = new google.maps.Marker({
+          position: markersOnMap[i].LatLng[0],
+          map: map
       });
-  });
 
-  let markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+      const infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          maxWidth: 250,
+          maxHeight: 120
+      });
+
+      marker.addListener('click', function () {
+          closeOtherInfo();
+          infowindow.open(marker.get('map'), marker);
+          infoObject[0] = infowindow;
+      });
+  }
 }
-//--info windows----------
-// let markers = addMarkerInfo
+function closeOtherInfo() {
+  if (infoObject.length > 0) {
+      infoObject[0].set("marker", null);
+      infoObject[0].close();
+      infoObject.length = 0;
+  }
+}
 
-// function addMarkerInfo() {
-// for (let i = 0; i < locations.length; i++) {
-//     let contentString = '<div id="content"><h2>' + locations[i].placeName +
-//         '</h2><p>' + locations[i].text + '</p></div>';
-
-//     const marker = new google.maps.Marker({
-//         position: locations[i].LatLng[0],
-//         map: map
-//     });
-
-//     const infowindow = new google.maps.InfoWindow({
-//         content: contentString,
-//         maxWidth: 200
-//     });
-
-//     marker.addListener('click', function () {
-//         closeOtherInfo();
-//         infowindow.open(marker.get('map'), marker);
-//         infoObject[0] = infowindow;
-//     });
-// }
-// }
-
-// function closeOtherInfo() {
-// if (infoObject.length > 0) {
-//     infoObject[0].set("marker", null);
-//     infoObject[0].close();
-//     infoObject.length = 0;
-// }
-// }
-
-// addMarkerInfo();
-
- //-------------------------nav
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 5,
+      center: centerCords
+  });
+  addMarkerInfo();
+}
+//-------------------------nav
  function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -137,3 +180,16 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
