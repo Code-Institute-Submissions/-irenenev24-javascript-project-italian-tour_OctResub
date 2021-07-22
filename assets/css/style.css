@@ -3,16 +3,14 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     width: 100%;
     max-width: 2000px;
     max-height: 1000px;
-    margin:0 auto;
+    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     background-color: seashell;
 }
-
 /*---------taken from w3schools and amended-----------------------*/
 .topnav {
   overflow: hidden;
@@ -23,38 +21,39 @@ body {
   display: block;
   color: #000;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  text-shadow: 1px 1px #f2f2f2;
   line-height: 1.2;
   font-size: 1.5rem;
   letter-spacing: .8px;
   font-family: 'Dancing Script', cursive;
+  text-decoration: none;
+  text-shadow: 1px 1px #f2f2f2;
+  padding: 16px 16px;
 }
-
 .topnav a:hover {
   background-color: rgba(10, 197, 35, 0.732);
 }
-
 .topnav a.active {
-  background-color: rgba(9, 197, 34, 0.1);
+  background-color: rgba(10, 197, 35, 0);
   color: #000;
   text-shadow: 1px 1px #f2f2f2;
+  font-size: 2.5rem;
 }
-
 .topnav .icon {
   display: none;
   background-color: rgba(247, 12, 12, 0.04);
-
 }
 /*-----------------welcome section------------------------------------*/
 .welcome-contact-italian{
   color: rgba(10, 197, 35, 0.726);
   text-transform: uppercase;
+  font-size: 2.6rem;
 }
 .welcome-contact-english{
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+}
+.welcome-text{
+  font-size: 1.3rem;
 }
 /*-----hero-image, code from geeks4geeks.com and amended---*/
 .home-container {
@@ -74,12 +73,12 @@ body {
     justify-content: center;
 }
 .hero-sign {
-    width: 70%;
+    width: 80%;
     height: 60%;
-    background-color: rgba(80, 79, 74, 0.678); 
+    background-color: rgba(80, 79, 74, 0.745); 
     text-shadow:1px 1px rgba(0, 0, 0, 0.6);
-    border-radius:1.3rem; 
-    padding: 10px 10px;
+    border-radius:1.5rem; 
+    padding: 20px 10px;
     margin-bottom: 0px;
   }
 .hero-text {
@@ -88,6 +87,11 @@ body {
     font-size: 1.6rem;
     letter-spacing: 1.5px;
     font-family: 'Dancing Script', cursive;
+}
+.italy {
+    font-size: 2.6rem;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px rgba(247, 243, 243, 0.1);
 }
 .btn-light {
     background-color: rgba(10, 197, 35, 0.726);
@@ -108,7 +112,7 @@ body {
 .attractions{
   color: rgba(247, 12, 12);
   text-transform: capitalize;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   text-shadow: 1px 1px #000;
   font-family: "Dancing Script", cursive;
 }
@@ -134,17 +138,22 @@ body {
 #sicily3 {
   background: url('../images/palermo-sicily-hero.jpg') center center / cover no-repeat fixed;
 }
-.section-heading-text{
+/*-------------text in main section images--------*/
+.section-image-text{
   background-color: rgba(80, 79, 74, 0.596);
   padding: 10px;
   border-radius: 12px;
-  font-size: .8rem;
+  font-size: 1rem;
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%) 
+}
+.section-heading-text{
+  font-size: 1.6rem;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.159);
 }
 .hero-heading{
   font-family: 'Dancing Script', cursive;
@@ -156,7 +165,6 @@ body {
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 2.4rem;
   text-transform: uppercase;
 }
 
@@ -169,7 +177,7 @@ body {
 }
 .card-title{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
 }
 .card-footer{
@@ -208,11 +216,6 @@ body {
 #map {
   height: 650px;
   width:100%;
-}
-@media screen and (max-width: 500px) {
-  #map{
-    height: 450px;
-  }
 }
 /*--------------Footer Section------------------*/
 .footer-bg{
@@ -303,4 +306,41 @@ footer h5{
     text-align: left;
   }
 }
-
+/*----------------text---------------*/
+@media screen and (min-width: 700px){
+.hero-text {
+  font-size: 2.5rem;
+}
+.attractions {
+  font-size: 4.2rem;
+}
+.section-heading-text {
+  font-size: 3.3rem;
+}
+.hero-text {
+  font-size: 4.2rem;
+}
+.italy {
+  font-size: 5.6rem;
+}
+.welcome-contact-italian {
+  font-size: 3rem;
+}
+.welcome-contact-english {
+  font-size: 2.1rem; 
+}
+.welcome-text {
+  font-size: 1.4rem;
+}
+}
+@media screen and (min-width: 1300px){
+.topnav a.active, .topnav a {
+  font-size: 1.8rem;
+}
+}
+@media screen and (max-width: 400px){
+  .topnav a.active, .topnav a {
+    font-size: 1.7rem;
+  }
+  }
+/*--------------------map--------------------*/
