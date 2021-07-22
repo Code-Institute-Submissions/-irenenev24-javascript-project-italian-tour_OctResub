@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Open+Sans&family=Roboto:wght@300;400;500&display=swap');
+/*----------------fonts imported from google fonts---*/@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Open+Sans&family=Roboto:wght@300;400;500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -28,6 +28,7 @@ body {
   text-decoration: none;
   text-shadow: 1px 1px #f2f2f2;
   padding: 16px 16px;
+  height: 80px;
 }
 .topnav a:hover {
   background-color: rgba(10, 197, 35, 0.732);
@@ -36,13 +37,64 @@ body {
   background-color: rgba(10, 197, 35, 0);
   color: #000;
   text-shadow: 1px 1px #f2f2f2;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 .topnav .icon {
   display: none;
   background-color: rgba(247, 12, 12, 0.04);
 }
-/*-----------------welcome section------------------------------------*/
+/*-----hero-image, code from geeks4geeks.com and amended---*/
+.home-container {
+  background: url('../images/../images/city-small.jpg') no-repeat bottom center;   
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.hero-sign {
+  width: 80%;
+  height: 60%;
+  background-color: rgba(80, 79, 74, 0.845); 
+  text-shadow:1px 1px rgba(0, 0, 0, 0.6);
+  border-radius:1.5rem; 
+  padding: 20px 10px;
+  margin-bottom: 0px;
+}
+.hero-text {
+  color: #f2f2f2;
+  line-height: 1;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  font-family: 'Dancing Script', cursive;
+}
+.italy {
+  font-size: 2.8rem;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 1px 1px rgba(247, 243, 243, 0.1);
+}
+.btn-light {
+  background-color: rgba(10, 197, 35, 0.726);
+  border: none;
+  border-radius: 15px;
+  min-width: 100px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #fff;
+}
+.btn-light:hover{
+background-color: rgba(245, 20, 20, 0.315) !important;
+color: #fff;
+}
+/*-----------------welcome paragraph section-----------*/
 .welcome-contact-italian{
   color: rgba(10, 197, 35, 0.726);
   text-transform: uppercase;
@@ -50,64 +102,11 @@ body {
 }
 .welcome-contact-english{
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 .welcome-text{
   font-size: 1.3rem;
 }
-/*-----hero-image, code from geeks4geeks.com and amended---*/
-.home-container {
-    background: url('../images/../images/city-small.jpg') no-repeat bottom center;   
-    background-size: cover;
-    min-height: 100vh;
-    width: 100%;
-    margin-bottom: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-.hero-sign {
-    width: 80%;
-    height: 60%;
-    background-color: rgba(80, 79, 74, 0.745); 
-    text-shadow:1px 1px rgba(0, 0, 0, 0.6);
-    border-radius:1.5rem; 
-    padding: 20px 10px;
-    margin-bottom: 0px;
-  }
-.hero-text {
-    color: #f2f2f2;
-    line-height: 1;
-    font-size: 1.6rem;
-    letter-spacing: 1.5px;
-    font-family: 'Dancing Script', cursive;
-}
-.italy {
-    font-size: 2.6rem;
-    font-family: 'Dancing Script', cursive;
-    text-shadow: 1px 1px rgba(247, 243, 243, 0.1);
-}
-.btn-light {
-    background-color: rgba(10, 197, 35, 0.726);
-    border: none;
-    border-radius: 15px;
-    min-width: 100px;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #fff;
-}
-.btn-light:hover{
-  background-color: rgba(245, 20, 20, 0.315) !important;
-  color: #fff;
-}
-/*--------------end of hero image -------------*/
-
 /*----------------section heading--------------*/
 .attractions{
   color: rgba(247, 12, 12);
@@ -139,11 +138,10 @@ body {
   background: url('../images/palermo-sicily-hero.jpg') center center / cover no-repeat fixed;
 }
 /*-------------text in main section images--------*/
-.section-image-text{
+.section-container{
   background-color: rgba(80, 79, 74, 0.596);
   padding: 10px;
   border-radius: 12px;
-  font-size: 1rem;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -151,13 +149,16 @@ body {
   margin-right: -50%;
   transform: translate(-50%, -50%) 
 }
-.section-heading-text{
+.section-header{
   font-size: 1.6rem;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.159);
 }
-.hero-heading{
-  font-family: 'Dancing Script', cursive;
+.section-text {
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
 }
+/*---------area name--------*/
 /*----------------w3docs-multicolor word---------*/
 .multicolortext {
   background-image: linear-gradient(to left, red, white, green);
@@ -181,7 +182,7 @@ body {
     text-transform: capitalize;
 }
 .card-footer{
-  padding: 2px;
+  padding: 4px;
   background-color: #f1f1f1;
   border: none !important;
 }
@@ -314,8 +315,11 @@ footer h5{
 .attractions {
   font-size: 4.2rem;
 }
-.section-heading-text {
+.section-header {
   font-size: 3.3rem;
+}
+.section-text {
+  font-size: 2.6rem;
 }
 .hero-text {
   font-size: 4.2rem;
@@ -340,7 +344,7 @@ footer h5{
 }
 @media screen and (max-width: 400px){
   .topnav a.active, .topnav a {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
   }
 /*--------------------map--------------------*/
