@@ -10,7 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--------for email.Js-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!--------for email.Js-->
     <script type="text/javascript">
     (function() {
     emailjs.init("user_QobomRXcDjhydC93mxlej");
@@ -42,7 +44,7 @@
                     <div class="hero-sign text-center">
                         <div><h3 class="hero-text">Searching for a new holiday destination?</h3>
                         <p class="welcome">Welcome To</p><span class="multicolortext italy">Italy</span></div>
-                        <p><a class="btn btn-sm btn-light" href="#contact">Contact Us</a></p>
+                        <p><a class="btn btn-sm btn-light" href="#contact-form">Contact Us</a></p>
                     </div>
                 </div>
             </div>
@@ -435,7 +437,7 @@
     <script src="assets/js/sendEmail.js"></script>
   
 <!------------------------------------contact-------------------------------->
-<section class="form-container container-fluid pt-2 pb-2" id="contact">
+<section class="form-container container-fluid pt-2 pb-2" id="contact-form">
     <header class="text-center mb-2 mt-2">
         <h1 class="header-two pb-2">Contact Us</h1>
         <p>Should you have any further questions please contact us through the following form.</p>
@@ -462,12 +464,29 @@
                 <label for="message" class="header-minor form-label mb-2">How can we help?</label>
                 <textarea name="message" class="form-control form-input" id="message" rows="3" required></textarea>
             </div>
-            <div class="form-group col-12 mb-3">
-            <input type="checkbox" id="legal" name="legal" value="legal">
-              <label for="legal" required>  Please tick to show you have read our <a href="T&C.html">Terms and Conditions</a></label><br>
-              </div>
+            <div>
+              <p class="text-center col-md-6 col-sm-12 form-group mb-3"><input type="checkbox" id="legal" name="legal" value="legal" required> Please tick to indicate you have read our</p>
+            </div>
           </div>
-        <button type="submit" class="btn form-btn mt-2 red-btn hvr-grow">Send Message</button>
+          <div>
+          </div>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Terms and Conditions</button>
+            <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <div class="container">
+            <h1>Terms and Conditions</h1>
+            </header>
+            <p>Do not copy any of the information given here without the express written consent of the company.</p>
+            <p>Do not copy any of the information from linked sites without appropiate consent from the site operators.</p>
+         </div>
+          <div>
+         </div>
+         </div>
+        </div>
+          <br>
+        <button type="submit" id="submit-button"class="btn form-btn red-btn hvr-grow" value="send">Send Message</button>
     </form>
 </section>
 </main>
@@ -492,5 +511,3 @@
     <script src="assets/js/sendEmail.js"></script>
   </body>
 </html>
-
-
