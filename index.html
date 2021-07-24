@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!--------for email.Js-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -28,7 +28,7 @@
             <a href="#rome1">ROME</a>
             <a href="#abruzzo2">ABRUZZO</a>
             <a href="#sicily3">SICILY</a>
-            <a href="#contact">CONTACT</a>
+            <a href="#contact-form">CONTACT</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
             </a>
@@ -311,6 +311,7 @@
   <p class="section-text">The Mediterranean's biggest island is separated from the mainland by the Strait of Messina.<br>Surround by water with a warm climate its a beach lovers dream.</p>
 </div>
 </div>
+
 <!-----attractions----->
 <div class="text-center attractions">Attractions in Sicily</div>
 <br>
@@ -429,14 +430,14 @@
     <div id="map"></div>
     <script src="assets/js/script.js"></script>
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+  
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBEXc5HFNyTH6th5iuelwkVpuiEC5NVk&callback=initMap&libraries=&v=weekly"
       async
     ></script>
+    <!---------link to email.Js file for email------------>
     <script src="assets/js/sendEmail.js"></script>
-  
-<!------------------------------------contact-------------------------------->
+<!--------------------------------contact-------------------------------->
 <section class="form-container container-fluid pt-2 pb-2" id="contact-form">
     <header class="text-center mb-2 mt-2">
         <h1 class="header-two pb-2">Contact Us</h1>
@@ -464,15 +465,12 @@
                 <label for="message" class="header-minor form-label mb-2">How can we help?</label>
                 <textarea name="message" class="form-control form-input" id="message" rows="3" required></textarea>
             </div>
-            <div>
-              <p class="text-center col-md-6 col-sm-12 form-group mb-3"><input type="checkbox" id="legal" name="legal" value="legal" required> Please tick to indicate you have read our</p>
-            </div>
-          </div>
-          <div>
-          </div>
+      </div>
+      <div>
+            <!--------------------------Terms and conditions modal---------->
             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Terms and Conditions</button>
             <div id="id01" class="modal">
-            <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="modal-content animate" action="/action_page.php" method="post">
             <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
             <div class="container">
@@ -481,12 +479,14 @@
             <p>Do not copy any of the information given here without the express written consent of the company.</p>
             <p>Do not copy any of the information from linked sites without appropiate consent from the site operators.</p>
          </div>
-          <div>
-         </div>
-         </div>
+        <div>
         </div>
-          <br>
+      </div>
+      </div>
+      </div>
+      <div>
         <button type="submit" id="submit-button"class="btn form-btn red-btn hvr-grow" value="send">Send Message</button>
+        </div>
     </form>
 </section>
 </main>

@@ -42,6 +42,7 @@ body {
 .topnav .icon {
   display: none;
   background-color: rgba(247, 12, 12, 0.04);
+  padding: 10px;
 }
 /*-----hero-image, code from geeks4geeks.com and amended---*/
 .home-container {
@@ -188,7 +189,7 @@ color: #fff;
     text-transform: capitalize;
 }
 .card-footer{
-  padding: 4px;
+  padding: 4px 0 16px 0;
   background-color: #f1f1f1;
   border: none !important;
 }
@@ -220,7 +221,6 @@ color: #fff;
   color: #f2f2f2;
   border-radius: 10px;
 }
-
 /*----------------map from google-----------*/
 #map {
   height: 650px;
@@ -238,7 +238,7 @@ footer h5{
 }
 /*------icons taken from w3schools and amended----*/
 .fa {
-  padding: 20px;
+  padding: 22px;
   font-size: 30px;
   width: 70px;
   text-align: center;
@@ -358,12 +358,14 @@ footer h5{
     font-size: 1.8rem;
   }
   }
+
 /*--------------------terms and conditions modal from w3schools and amended-------------------*/
 /* Set a style for all buttons */
 button, .form-btn {
   background-color: rgba(10, 197, 35, 0.726);
   border-radius: 10px;
   color: #000;
+  max-width: 50vw !important;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
