@@ -435,8 +435,6 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBEXc5HFNyTH6th5iuelwkVpuiEC5NVk&callback=initMap&libraries=&v=weekly"
       async
     ></script>
-    <!---------link to email.Js file for email------------>
-    <script src="assets/js/sendEmail.js"></script>
 <!--------------------------------contact-------------------------------->
 <section class="form-container container-fluid pt-2 pb-2" id="contact-form">
     <header class="text-center mb-2 mt-2">
@@ -446,20 +444,20 @@
     <form class="shadow p-3 mb-3 bg-white rounded text-center pb-4" onsubmit="return sendMail(this);">
         <div class="row">
             <div class=" col-md-6 col-sm-12 form-group mb-3">
-                <label for="firstname" class="header-minor form-label mb-2">First Name</label>
-                <input name="firstname" type="text" id="firstname" class="form-control form-input" required>
+                <label for="first" class="header-minor form-label mb-2">First Name</label>
+                <input name="first" type="text" id="first" class="form-control form-input" required>
             </div>
             <div class=" col-md-6 col-sm-12 form-group mb-3">
-                <label for="lastname" class="header-minor form-label mb-2">Last Name</label>
-                <input name="lastname" type="text" id="lastname" class="form-control form-input" required>
-            </div>
+              <label for="last" class="header-minor form-label mb-2">Last Name</label>
+              <input name="last" type="text" id="last" class="form-control form-input" required>
+          </div>
             <div class="col-12 col-lg-6 form-group mb-3">
                 <label for="email" class="header-minor form-label mb-2">Email Address</label>
                 <input name="email" type="email" id="email" class="form-control form-input" required>
             </div>
             <div class="form-group col-12 col-lg-6 mb-3">
                 <label for="number" class="header-minor form-label mb-2">Phone Number</label>
-                <input name="phone" type="tel" id="number" class="form-control form-input">
+                <input name="number" type="tel" id="number" class="form-control form-input">
             </div>
             <div class="form-group col-12 mb-3">
                 <label for="message" class="header-minor form-label mb-2">How can we help?</label>
@@ -508,6 +506,8 @@
             <h6 class="footer-legal"><p><small>© Irene Neville | Junior Developer | Course Project</small></p></footer></h6>
           </div>
     </footer>
+    
+    <!---------link to email.Js file for email------------>
     <script src="assets/js/sendEmail.js"></script>
   </body>
 </html>
