@@ -22,7 +22,7 @@ let markersOnMap = [{
     placeName: "Sistine Chapel, Rome",
     text: `<img src="assets/images/sistine-chapel-77.jpg" height="100" width="100">
     <p>The Sistine Chapel famous for its ceiling painted by Michelangelo</p>
-    <a href="https://en.wikipedia.org/wiki/Sistine_Chapel" target="_blank">Click here for more info</a>`,
+    <a href="#hotelSavoy" >Click here for more info</a>`,
     LatLng: [{
       lat: 41.9029,
       lng: 12.4545
@@ -52,7 +52,7 @@ let markersOnMap = [{
   placeName: "Parco Nazionale d’Abruzzo, Abruzzo",
   text: `<img src="assets/images/abruzzo-mountain-small.jpg" height="100" width="100">
   <p>Abruzzo contains many lakes, mountains and wildlife reserves.</p>
-  <a href="https://en.wikipedia.org/wiki/Abruzzo,_Lazio_and_Molise_National_Park" target="_blank">Click here for more info</a>`,
+  <a href="#hotelSavoy">Click here for more info</a>`,
     LatLng: [{
       lat: 41.8088, 
       lng: 13.7901

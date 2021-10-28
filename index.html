@@ -123,10 +123,10 @@
       </div>
 <br>
 <!----------------hotels------------>
-<div class="text-center attractions">Hotels In Rome</div>
+ <div class="text-center attractions">Hotels In Rome</div>
 <br>
 <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
+  <div class="col" id="hotelSavoy">
     <div class="card h-100">
       <img
         src="assets/images/hotel-savoy-roma.jpg"
@@ -137,6 +137,10 @@
         <h5 class="card-title">Hotel Savoy,
           <br>Rome
         </h5>
+        <p class="card-content">
+          Metro access
+          Set in a renovated historical building, the Savoy offers a rooftop bar with panoramic views across the Eternal City and free WiFi throughout. Spagna Metro Station is 400 metres away.
+        </p>
       </div>
       <div class="card-footer">
         <small class="text-muted"><a href="https://www.tripadvisor.co.uk/Hotel_Review-g187791-d228975-Reviews-Hotel_Savoy_Roma-Rome_Lazio.html" target="_blank" class="btn btn-success" role="button">Read More</a></small>
@@ -450,7 +454,7 @@
             <div class=" col-md-6 col-sm-12 form-group mb-3">
               <label for="last" class="header-minor form-label mb-2">Last Name</label>
               <input name="last" type="text" id="last" class="form-control form-input" required>
-          </div>
+            </div>
             <div class="col-12 col-lg-6 form-group mb-3">
                 <label for="email" class="header-minor form-label mb-2">Email Address</label>
                 <input name="email" type="email" id="email" class="form-control form-input" required>
@@ -463,28 +467,10 @@
                 <label for="message" class="header-minor form-label mb-2">How can we help?</label>
                 <textarea name="message" class="form-control form-input" id="message" rows="3" required></textarea>
             </div>
-      </div>
-      <div>
-            <!--------------------------Terms and conditions modal---------->
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Terms and Conditions</button>
-            <div id="id01" class="modal">
-            <div class="modal-content animate" action="/action_page.php" method="post">
-            <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <div class="container">
-            <h1>Terms and Conditions</h1>
-            </header>
-            <p>Do not copy any of the information given here without the express written consent of the company.</p>
-            <p>Do not copy any of the information from linked sites without appropiate consent from the site operators.</p>
-         </div>
-        <div>
+            <div class="form-group col-12 mb-3">
+        <button type="submit" onclick="myFunction()" id="submit-button"class="btn form-btn red-btn hvr-grow center" value="send">Send Message</button>
         </div>
-      </div>
-      </div>
-      </div>
-      <div>
-        <button type="submit" id="submit-button"class="btn form-btn red-btn hvr-grow" value="send">Send Message</button>
-        </div>
+      </div> 
     </form>
 </section>
 </main>
