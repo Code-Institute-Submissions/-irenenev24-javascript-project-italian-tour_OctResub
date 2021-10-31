@@ -1,19 +1,43 @@
 # **Italian Tours 2020**
 
-Live preview of the site is available [here](https://8000-apricot-roadrunner-ywphvkcr.ws-eu18.gitpod.io/)
+Live preview of the site is available [here](https://8000-apricot-roadrunner-ywphvkcr.ws-eu18.gitpod.io/) ------------change this
 
 This website is used to promote three different areas in Italy.
+I want to high=light three attractions and three hotels in these areas.
 - Rome
 - Abruzzo 
 - Sicily
+Also included is a contact form and a map that shows markers for each attraction and hotel.
 
-## UX
+# Table of Contents
 
-## Who is this website for?
+* [UX](#ux)
+    * [strategy](#strategy)
+        * [user stories](#user)
+        * [site goals](#site)
+    * [scope](#scope)    
+        * [features](#features)
+        * [future features](#future)
+    * [structure](#structure)
+    * [skeleton](#skeleton)
+        * [wireframes](#wireframes)
+    * [surface](#surface)
+* [Technologies used](#tech)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [credits](#credits)
 
-* This website is for people who are thinking of visiting Italy and want more information.
-* This website is for people based worldwide looking to travel for a holiday or extended stay.
-* Three different types of holidays:
+
+# UX <a name="ux">
+
+## Who is this website for? <a name="strategy">
+
+* This website is used to promote three areas in Italy. It is for people who are interested in
+ Italy as a holiday choice but might be unsure of which area to go to. Using this website they will have more 
+ information to help make a choice.
+* This website is for people based worldwide looking to travel for a holiday or extended stay, or may just want to
+ access information for future reference.
+* Three different areas for holidays:
   - Rome 
   - Abruzzo 
   - Sicily 
@@ -21,10 +45,10 @@ This website is used to promote three different areas in Italy.
 
 ### What do visitors want?
 
-* Clear information on the three featured areas.
-* Information on attractions in each place.
-* Information on hotels and how to book.
-* Clear contact form to get more information if required.
+* Clear purpose for the site. Intuitive navigation.
+* Clear information on attractions in each place linking to a page that gives detailed information on the specific attraction.
+* C;ear information on hotels and how to book using a link to the relevant TripAdvisor page.
+* Clear contact form to get more information if required which sends contact information through to emailJS account.
 * A trustworthy, easy to navigate site that gives clear information about the featured areas.
 * Multiple ways to contact the page admin's including links to social media pages.
 
