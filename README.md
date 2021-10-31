@@ -12,9 +12,9 @@ This website is used to promote three different areas in Italy.
 * This website is for people who are thinking of visiting Italy and want more information.
 * This website is for people based worldwide looking to travel for a holiday or extended stay.
 * Three different types of holidays:
-  - Rome - City break
-  - Abruzzo - Nature lovers holiday.
-  - Sicily - Beach lovers holiday
+  - Rome 
+  - Abruzzo 
+  - Sicily 
 * It is aimed at people aged 18+ with disposable income.
 
 ### What do visitors want?
@@ -96,40 +96,39 @@ This website is used to promote three different areas in Italy.
 ### Surface
 
 * Colors used:
- - #36454f charcoal,
- - #ffffec cream,
- - #f2f2f2 off-white,
- - rgb(193, 238, 253) lightblue,
- - rgb(0, 204, 255) blue,
- - red 
+ 1. #36454f charcoal,
+ 1. #ffffec cream,
+ 1. #f2f2f2 off-white,
+ 1. rgb(193, 238, 253) lightblue,
+ 1. rgb(0, 204, 255) blue,
+ 1. red 
 * Fonts used:
- - "Dancing Script", cursive
- - "Roboto", sans-serif
+ 1. "Dancing Script", cursive
+ 1. "Roboto", sans-serif
 * Images:
- - All from Unsplash.com
+ 1. All from Unsplash.com
 
 ## Features 
 
 ### Hero Image
 * A home page with a hero image and company logo in the nav bar.
 * About us section with details of opening hours, address, e-mail address and phone number.
-* A review section featuring customers reviews and images.
 
 ### Rome
-* Hero image with info text.
-* Image with link to Wikipedia info page for attractions.
-* Image with link to Tripadvisor info page for hotels.
+- Hero image with info text.
+- Image with link to Wikipedia info page for attractions.
+- Image with link to Tripadvisor info page for hotels.
 
 ### Abruzzo
-* Hero image with info text.
-* Image with link to Wikipedia info page for attractions.
-* Image with link to Tripadvisor info page for hotels.
+- Hero image with info text.
+- Image with link to Wikipedia info page for attractions.
+- Image with link to Tripadvisor info page for hotels.
 
 
 ### Sicily
-* Hero image with info text.
-* Image with link to Wikipedia info page for attractions.
-* Image with link to Tripadvisor info page for hotels.
+- Hero image with info text.
+- Image with link to Wikipedia info page for attractions.
+- Image with link to Tripadvisor info page for hotels.
 
 ### Contact Form
 * Featuring an area for users to request info if needed.
@@ -213,10 +212,10 @@ In the future I would like to build on to this site by adding:
 
 ## Code used
 * For my navbar I used code from W3Schools/bootstrap with jquery and popper.js.
-* 
+* Card element from w3schools.
 * CSS for the row and column class for the menu page was taken from W3Schools.
 * The CSS for my hero-text was taken from W3Schools and amended to suit.
-* 
+
 
 ## Images
 * All images used in this project were taken from Unsplash.com
@@ -224,10 +223,11 @@ In the future I would like to build on to this site by adding:
 
 ### Content
 * Content for this Milestone 2 Project was created by myself, Irene Neville, with help from the Code Institute
-  and my mentor Brian Macharia, and other exceptions previously stated. 
+  and my mentor Brian Macharia, unless otherwise stated. 
 
 ### Media
 * All media from Unsplash.com
+* All text for the information cards for each section has been taken from TripAdvisor and Wikipedia respectively.
 
 ### Acknowledgements
 
