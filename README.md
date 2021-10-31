@@ -1,6 +1,6 @@
 # **Italian Tours 2020**
 
-Live preview of the site is available [here](https://8000-apricot-roadrunner-ywphvkcr.ws-eu18.gitpod.io/) ------------change this
+Live preview of the site is available [here](https://) ------------change this
 
 This website is used to promote three different areas in Italy.
 I want to high=light three attractions and three hotels in these areas.
@@ -14,7 +14,10 @@ Also included is a contact form and a map that shows markers for each attraction
 * [UX](#ux)
     * [strategy](#strategy)
         * [user stories](#user)
+        * [visitor stories](#visitor)
         * [site goals](#site)
+        * [business goals](#business)
+        * [customer goals](#customer)
     * [scope](#scope)    
         * [features](#features)
         * [future features](#future)
@@ -30,7 +33,13 @@ Also included is a contact form and a map that shows markers for each attraction
 
 # UX <a name="ux">
 
-## Who is this website for? <a name="strategy">
+## Strategy <a name="strategy">
+
+* An easy to navigate website to promote the tourism web page and its social media accounts.
+* Promote the three regions to help boost tourism in the specific areas by highlighting the 
+  attractions located in each.
+
+## Who is this website for? <a name="user">
 
 * This website is used to promote three areas in Italy. It is for people who are interested in
  Italy as a holiday choice but might be unsure of which area to go to. Using this website they will have more 
@@ -43,27 +52,28 @@ Also included is a contact form and a map that shows markers for each attraction
   - Sicily 
 * It is aimed at people aged 18+ with disposable income.
 
-### What do visitors want?
+### What do visitors want? <a name="visitor">
 
-* Clear purpose for the site. Intuitive navigation.
+* Clear purpose for the site. 
+* Intuitive navigation throughout the site, responsive on smaller screens.
 * Clear information on attractions in each place linking to a page that gives detailed information on the specific attraction.
 * C;ear information on hotels and how to book using a link to the relevant TripAdvisor page.
 * Clear contact form to get more information if required which sends contact information through to emailJS account.
 * A trustworthy, easy to navigate site that gives clear information about the featured areas.
-* Multiple ways to contact the page admin's including links to social media pages.
+* Multiple ways to contact the page admin's including links to social media pages and a contact form.
 
 
-### Business Goals:
+### Business Goals: <a name="business-goals">
 
 1. Build on and extend the awareness around these areas.
 1. Showcase attractions and hotels in each area. 
-1. Promote Italy as a destination for every kind of holiday, relaxing beach break in Sicily.
-1. Nature lovers holiday in wild Abruzzo and finally a city of culture break in Rome.
+1. Promote Italy as a destination for every kind of holiday.
+1. Beach holiday in Sicily, nature lovers holiday in wild Abruzzo and finally a city of culture break in Rome.
 1. Using links to wikipedia and tripadvisor, potential clients have access to multiple information 
-1. sources to help plan their holiday.
-1. Promote social media pages.
+   sources to help plan their holiday.
+1. Promote social media pages to build awareness of these areas and the site.
 
-### Customer Goals:
+### Customer Goals: <a name="customer-goals">
 
 #### First time customer
 
@@ -83,13 +93,8 @@ Also included is a contact form and a map that shows markers for each attraction
 1. Can I use this site to book a hotel?
 1. Can I follow this business on social media?
 
-### Strategy
 
-* An easy to navigate website to promote the tourism web page and its social media accounts.
-* Promote the three regions to help boost tourism in the specific areas by highlighting the 
-  attractions located in each.
-
-### Scope
+### Scope <a name="scope">
 
 * How to book hotels?.
 * What the regions have to offer? 
@@ -101,7 +106,7 @@ Also included is a contact form and a map that shows markers for each attraction
 * A review section.
 * An about section to give a brief history of the business.
 
-### Structure
+### Structure <a name="structure">
 
 * A minimalist site with clear sections for each region and hotels for those regions.
 * A clear easy to use contact form and social media links.
@@ -110,7 +115,7 @@ Also included is a contact form and a map that shows markers for each attraction
   to the contact form making it more convienent for repeat users.
 * Multiple social media links to appeal to more users.
 
-### Skeleton
+### Skeleton <a name="skeleton">
 
 * Nav bar featuring links to various areas in the site.
 * Hero image with a welcome paaragraph about Italy featuring a contact button for ease of use.
@@ -119,22 +124,27 @@ Also included is a contact form and a map that shows markers for each attraction
 * Section with address, e-mail and telephone number.
 * Footer with social media links, legal info.
 
-### Surface
+### Surface <a name="surface">
 
 * Colors used:
+
  1. #36454f charcoal,
  1. #ffffec cream,
  1. #f2f2f2 off-white,
  1. rgb(193, 238, 253) lightblue,
  1. rgb(0, 204, 255) blue,
  1. red 
+
 * Fonts used:
+
  1. "Dancing Script", cursive
  1. "Roboto", sans-serif
+
 * Images:
+
  1. All from Unsplash.com
 
-## Features 
+## Features <a name="features">
 
 ### Hero Image
 * A home page with a hero image and company logo in the nav bar.
@@ -150,7 +160,6 @@ Also included is a contact form and a map that shows markers for each attraction
 - Image with link to Wikipedia info page for attractions.
 - Image with link to Tripadvisor info page for hotels.
 
-
 ### Sicily
 - Hero image with info text.
 - Image with link to Wikipedia info page for attractions.
@@ -162,14 +171,17 @@ Also included is a contact form and a map that shows markers for each attraction
 ### Google Map
 * Interactive map featuring markers with info windows.
   
- ## Features left to implement
+ ## Features left to implement <a name="future">
 
 In the future I would like to build on to this site by adding:
   - An online booking system.
   - A section for users to post their pictures to the page.
+  - Interactivity between the information cards and the map such as a "see on map" 
+  button that would link to the relevant infoWindow on the map.
+  - Adding a cluster map as more areas are added.
+  - Adding more areas with attractions and hotels for each one.
 
-
-## Technologies used:
+## Technologies used: <a name="tech">
 * HTML5
 * CSS3 
 * Bootstrap 4
@@ -179,11 +191,11 @@ In the future I would like to build on to this site by adding:
 * Google Fonts
 * Google Maps
 
-### Testing
+### Testing <a name="testing">
 * Located in seperate file
-(assets.testing.md)
+[test](assets/TESTING.md)
 
-### User stories ####################
+### User stories 
 
 * Customer Goals
  - 
@@ -205,7 +217,7 @@ In the future I would like to build on to this site by adding:
 - Samsung Galaxy Tab A 8.0
 - Various devices screens available on DevTools
 
-### Deployment 
+### Deployment <a name="deployment">
 
 ## Deploy from GitHub
  - Sign into GitHub and access your repositories.
