@@ -1,4 +1,5 @@
 //---mix of code institute and stack overflow-------
+// to send to relevant email service with relevant content
 function sendMail(contactForm) {
     emailjs.send("service_r19yrpd", "italia", {
         "from_first": contactForm.first.value,
