@@ -7,6 +7,6 @@ function sendMail(contactForm) {
         "from_email": contactForm.email.value,
         "from_number": contactForm.number.value,
         "from_message": contactForm.message.value
-      })
+      });
     return;
 }

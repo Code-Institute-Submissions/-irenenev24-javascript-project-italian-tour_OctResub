@@ -2,13 +2,13 @@
 
 Live preview of the site is available [here](https://) ------------change this
 
-![Image showing the website displayed on different screen sizes](assets/images/js-project-mockup.png)
-mock-up
+![Image showing the website displayed on different screen sizes](assets/images/js-project.png)
+
 This website is used to promote three different areas in Italy.
 I want to high=light three attractions and three hotels in these areas.
-- Rome
-- Abruzzo 
-- Sicily
+* Rome
+* Abruzzo 
+* Sicily
 Also included is a contact form and a map that shows markers for each attraction and hotel.
 
 # Table of Contents
@@ -65,17 +65,18 @@ Also included is a contact form and a map that shows markers for each attraction
 * Multiple ways to contact the page admin's including links to social media pages and a contact form.
 
 
-### Business Goals: <a name="business-goals">
+### Business Goals: <a name="business">
+
+#### Owner
 
 1. Build on and extend the awareness around these areas.
 1. Showcase attractions and hotels in each area. 
-1. Promote Italy as a destination for every kind of holiday.
 1. Beach holiday in Sicily, nature lovers holiday in wild Abruzzo and finally a city of culture break in Rome.
 1. Using links to wikipedia and tripadvisor, potential clients have access to multiple information 
    sources to help plan their holiday.
 1. Promote social media pages to build awareness of these areas and the site.
 
-### Customer Goals: <a name="customer-goals">
+### Customer Goals: <a name="customer">
 
 #### First time customer
 
@@ -91,7 +92,6 @@ Also included is a contact form and a map that shows markers for each attraction
 #### Repeat customers
 
 1. If I have more questions can I easily contact them?
-1. Can I leave an online review?
 1. Can I use this site to book a hotel?
 1. Can I follow this business on social media?
 
@@ -184,6 +184,7 @@ In the future I would like to build on to this site by adding:
   - Adding more areas with attractions and hotels for each one.
 
 ## Technologies used: <a name="tech">
+
 * HTML5
 * CSS3 
 * Bootstrap 4
@@ -197,31 +198,10 @@ In the future I would like to build on to this site by adding:
 * Located in seperate file
 [test](assets/TESTING.md)
 
-### User stories 
-
-* Customer Goals
- - 
-* Business Goals 
- - 
-* Repeat Customer Goals
- 
-
-
-
- ### Manual Testing Links
- 
- - 
- - 
-## Tested on
-- Windows 10
-- Microsoft Edge
-- Apple Macbook Project
-- Samsung Galaxy Tab A 8.0
-- Various devices screens available on DevTools
-
 ### Deployment <a name="deployment">
 
 ## Deploy from GitHub
+
  - Sign into GitHub and access your repositories.
  - Select desired repository.
  - Once clicked on, this bring you to a code and deploy page which contains details of your READme.md, a description of the 
@@ -233,14 +213,16 @@ In the future I would like to build on to this site by adding:
  - Click on this or copy and paste into browser to access your site.
 
  ## Run project locally
+
  - If you have a GitHub account you will need to log in. If not you will need to sign up at https://www.GitHub.com/ to access this file.
  - To run project, go to the repository for that project and click on it.
  - Click the Green button to start the repositroy. This should only be clicked once as each time it is clicked it opens a new 
    copy of the GitHub workspace.
  - The workspace is now open to be viewed and edited locally.
- - 
+ 
 
 ## To clone repository so it can be used in different editors effectively
+
  - To clone select desired repository.
  - Once clicked on, this bring you to a code and deploy page which contains details of your READme.md, a description of the 
    repository details and other info.
@@ -255,7 +237,7 @@ In the future I would like to build on to this site by adding:
 * Card element from w3schools.
 * CSS for the row and column class for the menu page was taken from W3Schools.
 * The CSS for my hero-text was taken from W3Schools and amended to suit.
-
+* geeks4geeks.com, here I found a solution for my hero-image issues as referred to in the TESTING.md
 
 ## Images
 * All images used in this project were taken from Unsplash.com
