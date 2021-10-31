@@ -2,6 +2,8 @@
 
 Live preview of the site is available [here](https://) ------------change this
 
+[Preview](assets/images/js-project-mockup.png)
+mock-up
 This website is used to promote three different areas in Italy.
 I want to high=light three attractions and three hotels in these areas.
 - Rome
@@ -246,7 +248,7 @@ In the future I would like to build on to this site by adding:
    that when selected gives you the option to clone or download the repository file.
 
 
-### Credits
+### Credits <a name="credits">
 
 ## Code used
 * For my navbar I used code from W3Schools/bootstrap with jquery and popper.js.

@@ -8,5 +8,5 @@ function sendMail(contactForm) {
         "from_number": contactForm.number.value,
         "from_message": contactForm.message.value
       })
-  return;
+    return;
 }
