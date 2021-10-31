@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--------for email.Js-->
+    <!--FOR EMAIL.JS-->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <!--------for email.Js-->
-    <script type="text/javascript">
+    <!--FOR EMAIL.JS-->
+    <script>
     (function() {
     emailjs.init("user_QobomRXcDjhydC93mxlej");
     })();
@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-      <!-----nav w3schools-->
+      <!--NAV W3SCHOOLS-->
         <div class="topnav" id="myTopnav">
             <a href="#home" class="active btn-grad">ITALY</a>
             <a href="#rome1">ROME</a>
@@ -37,7 +37,7 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <section class="home-container" id="home">
-        <!--Home page-->
+        <!--HOME PAGE-->
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-12 d-flex justify-content-center ">
@@ -50,13 +50,13 @@
             </div>
         </div>
     </section>
-<!------welcome---->
+<!--WELCOME-->
 <main>
 <div class="text-center">
 <h1 class="welcome-contact-italian">Bienvenuto En Italia</h1>
 <p class="welcome-contact-english">Welcome to Italy</p>
 <p class="welcome-text">Italy,<br> a European country with a long Mediterranean coastline,<br> which has left a powerful mark on Western culture and cuisine.<br> Its capital city Rome is home to the Vatican, <br> as well as landmark art and ancient ruins.</p></div>
-<!-----------------start of rome------------------->
+<!--START OF ROME-->
 <div id="rome1" class="hero-images">
   <br><br>
   <div id="container" class="section-container text-center">
@@ -64,10 +64,10 @@
     <p class="section-text">Rome is the capital city of Italy, as well as the capital of the Lazio region. <br>The city is the ideal location for a city break.</p>
   </div>
 </div>
-<!-------------------cards from w3schools and amended--------------->
+<!--CARDS FROM W3SCHOOLS AND AMENDED-->
 <div class="text-center attractions">Attractions In Rome</div>
 <br>
-<!-----attractions----->
+<!--ROME ATTRACTIONS-->
 <div class="row row-cols-1 row-cols-md-3 g-4" id="attractions">
     <div class="col" id="sistineChapel">
       <div class="card h-100">
@@ -76,7 +76,7 @@
           class="card-img-top"
           alt="Sistine Chapel"
         />
-        <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
+        <a href="#map" onclick="myClick(0);">Go To Map</a>
         <div class="card-body">
           <h5 class="card-title">Sistine Chapel,
             <br>Rome
@@ -129,10 +129,10 @@
       </div>
       </div>
 <br>
-<!----------------hotels------------>
+<!--ROME HOTELS-->
  <div class="text-center attractions">Hotels In Rome</div>
 <br>
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4" id="attractions">
   <div class="col" id="hotelSavoy">
     <div class="card h-100">
       <img
@@ -192,9 +192,9 @@
     </div>
   </div>
   </div>
-<!----------------------end of Rome----------------->
+<!--END OF ROME-->
 <br>
-<!-----------------------start of Abruzzo----------->
+<!--START OF ABRUZZO-->
 <div id="abruzzo2" class="hero-images">
   <br><br>
   <div id="container" class="section-container text-center">
@@ -202,10 +202,10 @@
   <p class="section-text">Located east of Rome, with an Adriatic coastline and the Apennine Mountains. <br>Feaaturing national parks, beaches and mountains its a nature lovers dream. </p>
   </div>
   </div>
-<!-----attractions----->
+<!--ABRUZZO ATTRACTIONS-->
 <div class="text-center attractions">Attractions in Abruzzo</div>
 <br>
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4" id="attractions">
   <div class="col" id="nationalPark">
     <div class="card h-100">
       <img
@@ -262,10 +262,10 @@
 </div>
 </div>
 <br>
-<!----------------hotels------------>
+<!--ABRUZZO HOTELS-->
 <div class="text-center attractions">Hotels In Abruzzo</div>
 <br>
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4" id="attractions">
   <div class="col" id="sextantio">
     <div class="card h-100">
       <img
@@ -321,9 +321,9 @@
   </div>
 </div>
 </div>
-<!--------------------------end of Abruzzo--------------------->
+<!--END OF ABRUZZO-->
 <br>
-<!-------------------------start of Sicily--------------------->
+<!--START OF SICILY-->
 <div id="sicily3" class="hero-images">
   <br><br>
   <div id="container" class="section-container text-center">
@@ -332,10 +332,10 @@
 </div>
 </div>
 
-<!-----attractions----->
+<!--SICILY ATTRACTIONS-->
 <div class="text-center attractions">Attractions in Sicily</div>
 <br>
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4" id="attractions">
   <div class="col" id="sanVito">
     <div class="card h-100">
       <img
@@ -392,10 +392,10 @@
 </div>
 </div>
 <br>
-<!----------------hotels------------>
+<!--SICILY HOTELS-->
 <div class="text-center attractions">Hotels In Sicily</div>
 <br>
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4" id="attractions">
   <div class="col" id="mazzaro">
     <div class="card h-100">
       <img
@@ -452,16 +452,16 @@
 </div>
 </div>
 <br>
-<!--------------------------------------Map---------------------------------->
+<!--MAP-->
     <div id="map"></div>
     <script src="assets/js/script.js"></script>
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-  
+    <!--GOOGLE MAP USING UNIQUE API KEY-->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBEXc5HFNyTH6th5iuelwkVpuiEC5NVk&callback=initMap&libraries=&v=weekly"
       async
     ></script>
-<!--------------------------------contact-------------------------------->
+<!--CONTACT-->
 <section class="form-container container-fluid pt-2 pb-2" id="contact-form">
     <header class="text-center mb-2 mt-2">
         <h1 class="header-two pb-2">Contact Us</h1>

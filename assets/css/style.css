@@ -1,4 +1,5 @@
-/*----------------fonts imported from google fonts---*/@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Open+Sans&family=Roboto:wght@300;400;500&display=swap');
+/*----------------fonts imported from google fonts---*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Open+Sans&family=Roboto:wght@300;400;500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -136,15 +137,18 @@ color: #fff;
 }
 /*---------------------rome--------------------*/
 #rome1{
-  background: url('../images/catacombs-rome-small.jpg') center center / cover no-repeat fixed;
+  background: url('../images/catacombs-rome-small.jpg')
+   center center / cover no-repeat fixed;
 }
 /*---------------------abruzzo-------------------*/
 #abruzzo2 {
-  background: url('../images/horse-riding-small.jpg') center center / cover no-repeat fixed;
+  background: url('../images/horse-riding-small.jpg') 
+  center center / cover no-repeat fixed;
 }
 /*---------------------siciliy--------------------*/
 #sicily3 {
-  background: url('../images/palermo-sicily-hero.jpg') center center / cover no-repeat fixed;
+  background: url('../images/palermo-sicily-hero.jpg') 
+  center center / cover no-repeat fixed;
 }
 /*-------------text in main section images--------*/
 .section-container{
@@ -346,16 +350,15 @@ footer h5{
 }
 .welcome-text {
   font-size: 1.6rem;
-}
+  }
 }
 @media screen and (min-width: 1300px){
 .topnav a.active, .topnav a {
   font-size: 1.8rem;
-}
+  }
 }
 @media screen and (max-width: 400px){
   .topnav a.active, .topnav a {
     font-size: 1.8rem;
   }
-  }
-
+}

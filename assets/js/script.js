@@ -1,3 +1,4 @@
+//LIST OF PLACES WITH COORDINATIONS ETC
 const places = [
    //-------Rome Attractions
   {
@@ -130,23 +131,24 @@ const places = [
 let map;
 
 const attractions = document.getElementById("attractions");
-
+//INITALIZE MAP
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 42.2719, 
       lng: 13.5674 },
     zoom: 6
   });
-
+//TO CREATE MARKERS AND INFOWINDOWS
   for (let i = 0; i < places.length; i++) {
     
-    let place = places[i]
+    let place = places[i];
     const marker = new google.maps.Marker({
       position: place.coordinates,
       animation: google.maps.Animation.DROP,
       map: map,
-      title: place.name
-    });
+      title: place.name,
+      });
+//infoWindow content
     let infoWindowContentString = `
       <div class="info-window">
         <img src="${place.imageLink}" height="200" width="100%">
@@ -160,7 +162,7 @@ function initMap() {
     const infowindow = new google.maps.InfoWindow({
       content: infoWindowContentString
     });
-
+//event listener to open infoWindow
     marker.addListener("click", () => {
       infowindow.open({
         anchor: marker,
@@ -170,20 +172,10 @@ function initMap() {
     });
   }
 }
-// to go to individual places on map when selected 
-function goToPlaceOnMap(placeId) {
-  let place = places[placeId]
-  location.href = "#map"
-  
-  map.setCenter(place.coordinates)
-  map.setZoom(4)
-}
 
-// goToPlaceOnMap(placeId)
-
-//-------------------------nav
+//NAV BAR
 function myFunction() {
-  var x = document.getElementById("myTopnav");
+  let x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
@@ -191,9 +183,9 @@ function myFunction() {
   }
 }
 
-//----------------------bactToTopBtn
+//BACKTOTOPBTN
 
-var mybutton = document.getElementById("myBtn");
+let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -211,6 +203,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-
-
