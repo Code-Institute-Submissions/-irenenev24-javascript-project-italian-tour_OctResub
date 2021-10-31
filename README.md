@@ -2,7 +2,7 @@
 
 Live preview of the site is available [here](https://) ------------change this
 
-[Preview](assets/images/js-project-mockup.png)
+![Image showing the website displayed on different screen sizes](assets/images/js-project-mockup.png)
 mock-up
 This website is used to promote three different areas in Italy.
 I want to high=light three attractions and three hotels in these areas.
