@@ -1,4 +1,4 @@
- const places = [
+const places = [
    //-------Rome Attractions
   {
     name: "Trevi Fountain, Rome",
@@ -128,6 +128,7 @@
 ];
 
 let map;
+
 const attractions = document.getElementById("attractions");
 
 function initMap() {
@@ -169,44 +170,16 @@ function initMap() {
     });
   }
 }
-
-
-/*function showAttractions() {
-  
-  for (let i = 0; i < places.length; i++) {
-    
-    let place = places[i]
-    
-    let attractionHTML = `
-      <div class="listing" id="listing-${i}">
-
-        <h3>${place.name}</h3>  
-        <img src="${place.imageLink}">
-
-        <div class="description">
-          ${place.description}
-        </div>
-        
-        <br>
-        <a onclick="goToPlaceOnMap(${i})">See on Map</a>
-      </div>
-    `
-    
-    attractions.innerHTML += attractionHTML
-    
-  }
-  
-}
-
+// to go to individual places on map when selected 
 function goToPlaceOnMap(placeId) {
   let place = places[placeId]
   location.href = "#map"
   
   map.setCenter(place.coordinates)
-  map.setZoom(18)
+  map.setZoom(4)
 }
 
-showAttractions()*/
+// goToPlaceOnMap(placeId)
 
 //-------------------------nav
 function myFunction() {

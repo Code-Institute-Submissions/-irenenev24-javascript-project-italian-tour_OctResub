@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!--------for email.Js-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <!--------for email.Js-->
     <script type="text/javascript">
     (function() {
@@ -68,15 +68,15 @@
 <div class="text-center attractions">Attractions In Rome</div>
 <br>
 <!-----attractions----->
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4" id="attractions">
     <div class="col" id="sistineChapel">
-      <div class="card h-100" id="attractions">
+      <div class="card h-100">
         <img
           src="assets/images/sistine-chapel-77.jpg"
           class="card-img-top"
           alt="Sistine Chapel"
         />
-        <a href="seeOnMap">(see on map)</a>
+        <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
         <div class="card-body">
           <h5 class="card-title">Sistine Chapel,
             <br>Rome
@@ -92,12 +92,13 @@
       </div>
     </div>
   <div class="col" id="treviFountain">
-    <div class="card h-100" id="attractions">
+    <div class="card h-100">
       <img
           src="assets/images/trevi-fountain-small-close-up.jpg"
           class="card-img-top"
           alt="Trevi Fountain"
         />
+        <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
         <div class="card-body">
           <h5 class="card-title">Trevi Fountain,
             <br>Rome
@@ -109,12 +110,13 @@
       </div>
     </div>
     <div class="col" id="cloacaMaxima">
-      <div class="card h-100" id="attractions">
+      <div class="card h-100">
         <img
             src="assets/images/rome2.jpg"
             class="card-img-top"
             alt="Cloaca Maxima"
           />
+          <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
           <div class="card-body">
             <h5 class="card-title">Cloaca Maxima,
               <br>Rome
@@ -132,12 +134,13 @@
 <br>
 <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col" id="hotelSavoy">
-    <div class="card h-100" id="attractions">
+    <div class="card h-100">
       <img
         src="assets/images/hotel-savoy-roma.jpg"
         class="card-img-top"
         alt="Hotel Savoy Rome"
       />
+      <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
       <div class="card-body">
         <h5 class="card-title">Hotel Savoy,
           <br>Rome
@@ -153,12 +156,13 @@
     </div>
   </div>
   <div class="col" id="marcellaHotel">
-    <div class="card h-100" id="attractions">
+    <div class="card h-100">
       <img
         src="assets/images/marcalle-hotel-rome.jpg"
         class="card-img-top"
         alt="Marcalle Hotel Rome"
       />
+      <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
       <div class="card-body">
         <h5 class="card-title">Marcalle Hotel,
           <br>Rome
@@ -170,12 +174,13 @@
     </div>
   </div>
   <div class="col" id="#otivmHotel">
-    <div class="card h-100" id="attractions">
+    <div class="card h-100">
       <img
         src="assets/images/otivm-rome-hotel.jpg"
         class="card-img-top"
         alt="Otivm Hotel Rome"
       />
+      <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
       <div class="card-body">
         <h5 class="card-title">Otivm Hotel,
           <br>Rome
@@ -202,12 +207,13 @@
 <br>
 <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col" id="nationalPark">
-    <div class="card h-100" id="attractions">
+    <div class="card h-100">
       <img
         src="assets/images/abruzzo-mountain-small.jpg"
         class="card-img-top"
         alt="National Park, Abruzzo"
       />
+      <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
       <div class="card-body">
         <h5 class="card-title">Parco Nazionale d’Abruzzo,
           <br>Abruzzo
@@ -219,12 +225,13 @@
     </div>
 </div>
 <div class="col" id="lakeScanno">
-  <div class="card h-100" id="attractions">
+  <div class="card h-100">
     <img
       src="assets/images/lake-scanno-small.jpg"
       class="card-img-top"
       alt="Lake Scanno, Abruzzo"
     />
+    <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
     <div class="card-body">
       <h5 class="card-title">Lake Scanno,
         <br>Abruzzo
@@ -236,12 +243,13 @@
   </div>
 </div>
 <div class="col" id="castle">
-  <div class="card h-100" id="attractions">
+  <div class="card h-100">
     <img
       src="assets/images/abruzzo-small-5.jpg"
       class="card-img-top"
       alt="Castle of Roccascalegna, Abruzzo"
     />
+    <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
     <div class="card-body">
       <h5 class="card-title">Castle of Roccascalegna,
         <br>Abruzzo
@@ -259,12 +267,13 @@
 <br>
 <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col" id="sextantio">
-    <div class="card h-100" id="attractions">
+    <div class="card h-100">
       <img
         src="assets/images/sextantio-3.jpg"
         class="card-img-top"
         alt="Sextanio Abruzzo"
       />
+      <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
       <div class="card-body">
         <h5 class="card-title">Sextantio Albergo Diffuso,
           <br>Abruzzo
@@ -276,12 +285,13 @@
     </div>
 </div>
 <div class="col" id="rigugio">
-  <div class="card h-100" id="attractions">
+  <div class="card h-100">
     <img
       src="assets/images/rocca-1.jpg"
       class="card-img-top"
       alt="Rifugio della Rocca Abruzzo"
     />
+    <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
     <div class="card-body">
       <h5 class="card-title">Rifugio della Rocca,
         <br>Abruzzo
@@ -293,12 +303,13 @@
   </div>
 </div>
 <div class="col" id="hotelPescara">
-  <div class="card h-100" id="attractions">
+  <div class="card h-100">
     <img
       src="assets/images/g-hotel-pescara.jpg"
       class="card-img-top"
       alt="G hotel Pescara Abruzzo"
     />
+    <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
     <div class="card-body">
       <h5 class="card-title">G Hotel Pescara,
         <br>Abruzzo
@@ -326,12 +337,13 @@
 <br>
 <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col" id="sanVito">
-    <div class="card h-100" id="attractions">
+    <div class="card h-100">
       <img
         src="assets/images/sicily-beach-small.jpg"
         class="card-img-top"
         alt="San Vito Lo Capo, Sicily"
       />
+      <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
       <div class="card-body">
         <h5 class="card-title">San Vito Lo Capo,
           <br>Sicily
@@ -343,12 +355,13 @@
     </div>
 </div>
 <div class="col" id="selinute">
-  <div class="card h-100" id="attractions">
+  <div class="card h-100">
     <img
       src="assets/images/selinunte-sicily.jpg"
       class="card-img-top"
       alt="Selinute, Sicliy"
     />
+    <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
     <div class="card-body">
       <h5 class="card-title">Selinunte,
         <br>Sicily
@@ -360,12 +373,13 @@
   </div>
 </div>
 <div class="col" id="palermo">
-  <div class="card h-100" id="attractions">
+  <div class="card h-100">
     <img
       src="assets/images/palermo1.jpg"
       class="card-img-top"
       alt="Palermo, Sicily"
     />
+    <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
     <div class="card-body">
       <h5 class="card-title">Palermo,
         <br>Sicily
@@ -383,12 +397,13 @@
 <br>
 <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col" id="mazzaro">
-    <div class="card h-100" id="attractions">
+    <div class="card h-100">
       <img
         src="assets/images/mazzaro-sea-palace.jpg"
         class="card-img-top"
         alt="Mazzaro Sea Palace, Sicily"
       />
+      <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
       <div class="card-body">
         <h5 class="card-title">Mazzaro Sea Palace,
           <br>Sicily
@@ -400,12 +415,13 @@
     </div>
     </div>
     <div class="col" id="borgoPantano">
-      <div class="card h-100" id="attractions">
+      <div class="card h-100">
         <img
           src="assets/images/hotel-borgo-sicily.jpg"
           class="card-img-top"
           alt="Hotel Borgo Sicily"
         />
+        <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
         <div class="card-body">
           <h5 class="card-title">Hotel Borgo Pantano,
             <br>Sicily
@@ -417,12 +433,13 @@
       </div>
 </div>
 <div class="col" id="giardini">
-  <div class="card h-100" id="attractions">
+  <div class="card h-100">
     <img
       src="assets/images/giardini-mon-plasier-sicily.jpg"
       class="card-img-top"
       alt="Giardini Mon Plaisir Abruzzo"
     />
+    <a href="#map" onclick="goToPlaceOnMap">Go To Map</a>
     <div class="card-body">
       <h5 class="card-title">Giardini Mon Plaisir,
         <br>Sicily
@@ -473,13 +490,13 @@
                 <textarea name="message" class="form-control form-input" id="message" rows="3" required></textarea>
             </div>
             <div class="form-group col-12 mb-3">
-        <button type="submit" onclick="myFunction()" id="submit-button"class="btn form-btn red-btn hvr-grow center" value="send">Send Message</button>
+        <button type="submit" onclick="myFunction()" id="submit-button" class="btn form-btn red-btn hvr-grow center" value="send">Send Message</button>
         </div>
       </div> 
     </form>
 </section>
 </main>
-<!---------------------------------------footer----------------------------->
+<!--FOOTER-->
 <footer class="container-fluid footer-bg">
         <div class="social-links text-center">
           <h5 class="footer-heading">Follow Us</h5>
@@ -494,11 +511,11 @@
         </div>  
         <hr>
           <div class="footer-copyright text-center">
-            <h6 class="footer-legal"><p><small>© Irene Neville | Junior Developer | Course Project</small></p></footer></h6>
+            <h6 class="footer-legal"><small>© Irene Neville | Junior Developer | Course Project</small></h6>
           </div>
     </footer>
     
-    <!---------link to email.Js file for email------------>
+    <!--LINK TO EMAIL.JS FILE FOR EMAIL-->
     <script src="assets/js/sendEmail.js"></script>
   </body>
 </html>
