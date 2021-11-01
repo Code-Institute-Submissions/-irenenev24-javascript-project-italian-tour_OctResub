@@ -1,4 +1,4 @@
-// Chosen betwween beach, restaurant, activies
+//Code from Henrique Peroni and amended
 
 function chooseCategory(chosen) {
     const choices = document.getElementsByClassName("choices");

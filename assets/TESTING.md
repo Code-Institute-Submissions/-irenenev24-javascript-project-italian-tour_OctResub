@@ -61,6 +61,7 @@ Found to be effective.
  a Javascript button that will connect to and open the relevant infoWindow using an onclick event.
 * 'Click here for more info' button on the infoWindows of the map linking to the appropiate information card.
 * Navigation back that will take you to the selected section when clicked.
+* 'View on map' feature in the cards links to the relevant marker on the map. I want to make this more interactive in the future.
 
 
 ## User stories 

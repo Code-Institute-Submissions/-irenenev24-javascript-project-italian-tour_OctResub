@@ -9,7 +9,8 @@ I want to high=light three attractions and three hotels in these areas.
 * Rome
 * Abruzzo 
 * Sicily
-Also included is a contact form and a map that shows markers for each attraction and hotel.
+
+- Also included is a contact form and a map that shows markers for each attraction and hotel.
 
 # Table of Contents
 
@@ -245,7 +246,7 @@ In the future I would like to build on to this site by adding:
 * CSS for the row and column class for the menu page was taken from W3Schools.
 * The CSS for my hero-text was taken from W3Schools and amended to suit.
 * geeks4geeks.com, here I found a solution for my hero-image issues as referred to in the TESTING.md
-
+* Henrique Peroni, I got the button and JS code to access the map from the cards from code I saw done by this person on Slack.
 ## Images
 * All images used in this project were taken from Unsplash.com
 * All icons taken from font awesome.

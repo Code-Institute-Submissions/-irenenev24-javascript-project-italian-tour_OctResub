@@ -29,8 +29,7 @@ const places = [
           lng: 12.4802
       }, //Cloaca Maxima, Rome
       description: "The oldest surviving sewerage system still stands in Rome, Italy",
-      link: `<a href="#cloacaMaxima">Click here for more info</a>`,
-      mapLink: `<a href="#seeOnMap">See on Map</a>`,
+      link: `<a href="#cloacaMaxima">Click here for more info</a>`
   },
   //-------Rome Hotels
   {
@@ -40,7 +39,7 @@ const places = [
           lat: 41.9074,
           lng: 12.4893
       }, //Hotel Savoy, Rome
-      description: "Distinct quality",
+      description: "High quality hotel located in central Rome",
       link: `<a href="#hotelSavoy">Click here for more info</a>`
   },
   {
@@ -50,7 +49,7 @@ const places = [
           lat: 41.9470,
           lng: 12.4753
       }, //Marcella Hotel, Rome
-      description: "Distinct quality",
+      description: "5 Star amenities await in this gem.",
       link: `<a href="#marcellaHotel">Click here for more info</a>`
   },
   {
@@ -60,7 +59,7 @@ const places = [
           lat: 41.8470,
           lng: 12.4753
       }, //Otivm Hotel, Rome
-      description: "Distinct quality",
+      description: "Conveniently located, this will be your “home away from home”.",
       link: `<a href="#otivmHotel">Click here for more info</a>`
   },
   //-------Abruzzo Attractions
@@ -71,7 +70,7 @@ const places = [
           lat: 41.8088,
           lng: 13.7901
       }, //National Park, Abruzzo
-      description: "Distinct quality",
+      description: "Awash with lakes, forests and wild bear and foxes this park is a must.",
       link: `<a href="#nationalPark">Click here for more info</a>`
   },
   {
@@ -81,7 +80,7 @@ const places = [
           lat: 41.9217,
           lng: 13.8637
       }, //Lake Scanno, Abruzzo
-      description: "Distinct quality",
+      description: "Beautiful heart shaped lake, located high in the Abruzzo hills.",
       link: `<a href="#lakeScanno">Click here for more info</a>`
   },
   {
@@ -91,7 +90,7 @@ const places = [
           lat: 42.0626,
           lng: 14.3049
       }, //Castle of Roccascalengo, Abruzzo
-      description: "Distinct quality",
+      description: "Beautifully maintained castle walls overlooking the vast valleys of Abruzzo",
       link: `<a href="#castle">Click here for more info</a>`
   },
   //-------Abruzzo Hotels
@@ -102,7 +101,7 @@ const places = [
           lat: 42.2039,
           lng: 13.3834
       }, //Sextantio Albergo Diffuso, Abruzzo
-      description: "Distinct quality",
+      description: "A medieval fortified village in Abruzzo region where its rooms, wine bar, restaurant.",
       link: `<a href="#sextantio">Click here for more info</a>`
   },
   {
@@ -112,7 +111,7 @@ const places = [
           lat: 42.3278,
           lng: 13.6912
       }, //Rifugio della Rocca, Abruzzo
-      description: "Distinct quality",
+      description: "The Rifugio della Rocca, nestling below the ancient castle at Rocca Calascio.",
       link: `<a href="#rifugio">Click here for more info</a>`
   },
   {
@@ -122,7 +121,7 @@ const places = [
           lat: 42.3278,
           lng: 13.6912
       }, //G Hotel Pescara, Abruzzo
-      description: "Distinct quality",
+      description: "Guests of G Hotel Pescara can easily experience some of Pescara's most well known attractions.",
       link: `<a href="#hotelPescara">Click here for more info</a>`
   },
   //-------Sicily Attractions
@@ -133,7 +132,7 @@ const places = [
           lat: 38.1750,
           lng: 12.7335
       }, //San Vito Lo Capo, Sicily
-      description: "Distinct quality",
+      description: "This beautiful sandy beach is nestled in a secluded cove.",
       link: `<a href="#sanVito">Click here for more info</a>`
   },
   {
@@ -143,7 +142,7 @@ const places = [
           lat: 37.5834,
           lng: 12.8252
       }, //Selinunte, Sicily
-      description: "Distinct quality",
+      description: "Selinunte was an ancient Greek city on the south-western coast of Sicily in Italy.",
       link: `<a href="#selinute">Click here for more info</a>`
   },
   {
@@ -153,7 +152,7 @@ const places = [
           lat: 38.1157,
           lng: 13.3615
       }, //Palermo, Siciliy
-      description: "Distinct quality",
+      description: "Palermo is a city in southern Italy, the capital of both the autonomous region of Sicily and the Metropolitan City of Palermo, the city's surrounding metropolitan province.",
       link: `<a href="#palermo">Click here for more info</a>`
   },
   //-------Sicily Hotels
@@ -164,7 +163,7 @@ const places = [
           lat: 37.518,
           lng: 15.1731
       }, //Mazzaro Sea Palace,Sicily
-      description: "Distinct quality",
+      description: "Located by the sea this hotel is convieniently located for sun worshippers.",
       link: `<a href="#mazzaro">Click here for more info</a>`
   },
   {
@@ -174,7 +173,7 @@ const places = [
           lat: 37.0755,
           lng: 15.2866
       }, //Hotel Borgo Pantano, Sicily
-      description: "Distinct quality",
+      description: "Distinct quality in beautiful surroundings, this hotel is a haven for weary travellers.",
       link: `<a href="#borgoPantano">Click here for more info</a>`
   },
   {
@@ -184,7 +183,7 @@ const places = [
           lat: 37.3278,
           lng: 15.6912
       }, //Giardini Mon Plaisir, Sicily
-      description: "Distinct quality",
+      description: "Previously a garden and manor house, this building has been lovingly maintained for many years.",
       link: `<a href="#giardini">Click here for more info</a>`
   },
 ];
@@ -214,7 +213,7 @@ function initMap() {
       let infoWindowContentString=` <div class="info-window">
       <img src = "${place.imageLink}"
       height = "200" width = "100%">
-          <h3 style = "font-family: Dancing Script, cursive">${place.name}><h3><p>${place.description}</p><p>${place.link}</p><a href="#attraction-${i}">Attractions</a></div>`;
+          <h3 style = "font-family: Dancing Script, cursive">${place.name}><h3><h5>${place.description}</p><p>${place.link}</h5><a href="#attraction-${i}">Attractions</a></div>`;
 
       const infowindow = new google.maps.InfoWindow({
           content: infoWindowContentString
@@ -228,7 +227,7 @@ function initMap() {
       });
     }
   }
-
+//Code from Henrique Peroni and amended
   $(".choices-btn").click(function () {
     map.setCenter(new google.maps.LatLng(this.dataset.lat, this.dataset.lng));
     map.setZoom(14);
@@ -258,7 +257,7 @@ function initMap() {
     //SicilyHotels
     ["Mazzaro, Sicily", 37.518, 15.1731],
     ["Borgo, Sicily", 37.0755, 15.2866],
-    ["Giardini, Sicily", 37.3278, 15.6912],
+    ["Giardini, Sicily", 36.0778, 15.2002],
   ];
 
 //NAV BAR
