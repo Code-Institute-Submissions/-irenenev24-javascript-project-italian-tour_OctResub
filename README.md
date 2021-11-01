@@ -1,6 +1,6 @@
 # **Italian Tours 2020**
 
-Live preview of the site is available [here](https://) ------------change this
+Live preview of the site is available [here](https://irenenev24.github.io/javascript-project-italian-tour/)
 
 ![Image showing the website displayed on different screen sizes](assets/images/js-project.png)
 
