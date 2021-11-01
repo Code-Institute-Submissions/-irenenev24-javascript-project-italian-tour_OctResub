@@ -186,6 +186,9 @@ In the future I would like to build on to this site by adding:
 ## Wireframe
 
 [home/rome mockup](assets/images/home-rome-wireframe.png)
+[abruzzo wireframe](assets/images/abruzzo-mockup.png)
+[sicily wireframe](assets/images/sicily-mockup.png)
+[map/contact form wireframe](assets/images/map-contact.png)
 
 ## Technologies used: <a name="tech">
 

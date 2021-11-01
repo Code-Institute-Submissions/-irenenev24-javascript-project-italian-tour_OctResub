@@ -118,7 +118,7 @@ to return for more information and to book through this site.
 
 ## Validation
 [HTML](https://validator.w3.org/)
-![HTML](assets/images/html-validator.png)
+[HTML](assets/images/html-validator.png)
 
 
 * Ran HTML code through HTML Validator.
@@ -127,7 +127,7 @@ to return for more information and to book through this site.
  - Received an error because I had a-tag as a descendant of the button element. Styled the a-tag as a button and deleted the button element.
 
 [CSS](https://jigsaw.w3.org/css-validator/)
-!(assets/images/css-validation.png)
+[CSS](assets/images/css-validation.png)
 
 * Ran HTML code through HTML Validator.
  - No errors found.
@@ -139,7 +139,10 @@ to return for more information and to book through this site.
 
 ## Wireframe
 
-![home/rome mockup](assets/images/home-rome-wireframe.png)
+[home/rome mockup](assets/images/home-rome-wireframe.png)
+[abruzzo wireframe](assets/images/abruzzo-mockup.png)
+[sicily wireframe](assets/images/sicily-mockup.png)
+[map/contact form wireframe](assets/images/map-contact.png)
 
 ### Code
 
