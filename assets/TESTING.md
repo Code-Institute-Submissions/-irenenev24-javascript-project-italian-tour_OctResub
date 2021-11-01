@@ -137,13 +137,6 @@ to return for more information and to book through this site.
 * Passed all code through JSHINT.
  - No errors found.
 
-## Wireframe
-
-[home/rome mockup](assets/images/home-rome-wireframe.png)
-[abruzzo wireframe](assets/images/abruzzo-mockup.png)
-[sicily wireframe](assets/images/sicily-mockup.png)
-[map/contact form wireframe](assets/images/map-contact.png)
-
 ### Code
 
 I used a code beautifier to help format code before submission.
