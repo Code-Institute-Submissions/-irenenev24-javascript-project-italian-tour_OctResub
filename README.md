@@ -183,6 +183,10 @@ In the future I would like to build on to this site by adding:
   - Adding a cluster map as more areas are added.
   - Adding more areas with attractions and hotels for each one.
 
+## Wireframe
+
+[home/rome mockup](assets/images/home-rome-wireframe.png)
+
 ## Technologies used: <a name="tech">
 
 * HTML5
