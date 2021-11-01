@@ -1,4 +1,4 @@
-# **Italian Tours 2020**
+# **Italian Tours 2021**
 
 Live preview of the site is available [here](https://irenenev24.github.io/javascript-project-italian-tour/)
 
