@@ -118,6 +118,7 @@ to return for more information and to book through this site.
 
 ## Validation
 [HTML](https://validator.w3.org/)
+!(assets/images/html-validator.png)
 
 * Ran HTML code through HTML Validator.
  - Two warnings for "The type attribute is unnecessary for JavaScript resources". Deleted both after check they really were not necessary.
@@ -134,6 +135,10 @@ to return for more information and to book through this site.
 
 * Passed all code through JSHINT.
  - No errors found.
+
+## Wireframe
+
+![home/rome mockup](assets/images/home-rome-wireframe.png)
 
 ### Code
 
